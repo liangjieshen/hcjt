@@ -1,0 +1,33 @@
+.contact {
+	width: 80%;
+	margin:0 auto;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-around;
+}
+.contact .contact-box {
+	width: 40%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	overflow: hidden;
+	margin-top: 10%;
+}
+.contact .contact-box p {
+	font-size: 2.5rem;
+	text-align: center;
+	margin:6% auto;
+	font-weight: 600;
+}
+.contact .contact-box span {
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+}

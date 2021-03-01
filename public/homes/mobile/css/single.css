@@ -1,0 +1,129 @@
+.course p {
+	font-size: 2.2rem;
+	text-align: left;
+	line-height: 3.5rem;
+	color: #666666;
+}
+.single {
+	width: 100%;
+	padding: 10% 0;
+}
+.single img {
+	width: 100%;
+}
+
+
+
+/*公司简介--start*/
+.profile-title{
+	margin:5% auto;
+	width:20rem;
+	height: 10rem;
+	background-color: #fff;
+	z-index: 1;
+	position: relative;
+}
+.profile-box{
+	width: 100%;
+	margin-top: -16%;
+	border: 0.1rem solid #ccc;
+	border-radius: 1rem;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+.profile{
+	width: 90%;
+	margin: 12% auto 5%;
+}
+.profile p{
+	font-size: 1.8rem;
+	line-height: 3.5rem;
+}
+/*公司简介--end*/
+
+
+
+/* 公司环境--start*/
+.surroundings {
+	width: 100%;
+}
+.surroundings-img {
+	width: 50%;
+	height: 20.542rem;
+	float: left;
+}
+.surroundings-img img {
+	width: 100%;
+	height: 100%;
+}
+.surroundings-con {
+	width: 50%;
+	height: 20.542rem;
+	float: left;
+	background-color: #f6f6f6;
+	overflow: hidden;
+}
+.surroundings-con p {
+	font-size: 2.5rem;
+	text-align:center;
+	margin-top: 10%
+}
+.surroundings-con span {
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+	color: #666;
+	margin-top: 3%;
+	line-height: 2.8rem;
+}
+/* 公司环境--end*/
+
+
+
+/*新闻内容--start*/
+.content-left-title{
+	font-size: 3rem;
+	text-align: center;
+	font-weight: 600;
+}
+.content-left-time{
+	width: 92%;
+	margin: 3% auto;
+}
+.content-left-time span:first-child{
+	display: block;
+	float: left;
+	font-size: 1.5rem;
+	color: #666;
+}
+.content-left-time span:not(:first-child){
+	display: block;
+	float: right;
+	font-size: 1.5rem;
+	color: #666;
+}
+.content-left-content{
+	width: 92%;
+	margin: 10% auto 0;
+}
+.content-left-content p{
+	font-size: 2rem;
+	line-height: 3rem;
+}
+.content-left-page{
+	padding: 3% 0;
+	margin: 5% auto 0;
+	border-top: 1px dashed #ccc;
+}
+.content-left-page div{
+	margin-bottom: 2rem;
+}
+.content-left-page div a{
+	font-size: 1.8rem;
+	color: #888;
+}
+.content-left-page div a:hover{
+	color: #f26d00;
+}
+/*新闻内容--end*/

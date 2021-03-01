@@ -1,0 +1,245 @@
+.content{
+	margin: 6% auto;
+}
+.banner{
+	width: 100%;
+	position: relative;
+}
+.banner img{
+	width: 100%;
+}
+.banner .banner-box{
+	position: absolute;
+	top:30%;
+	left:18%;
+}
+.banner .banner-box p{
+	font-size: 72px;
+	display: block;
+	color: #fff;
+	text-align: left;
+}
+.banner .banner-box span{
+	font-size: 30px;
+	color: #fff;
+	display: block;
+	text-align: left;
+	margin: 2% 0;
+}
+.banner .banner-box a{
+	font-size: 30px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	padding: 2% 6%;
+	text-align: left;
+	line-height: 150px;
+}
+.banner .banner-box a:hover{
+	background-color: #f26d00;
+}
+
+
+.tax-title{
+	font-size: 30px;
+	color: #333;
+	text-align: center;
+}
+.tax-title span{
+	font-weight: bold;
+	color: #ec3030;
+}
+.tax-small_title{
+	width:71%;
+	display: block;
+	font-size: 18px;
+	color: #666;
+	margin: 1% auto;
+	text-align: center;
+	line-height: 42px;
+}
+
+
+.one-box{
+	width: 54%;
+	margin: 5% auto;
+}
+.one-box img{
+	width: 100%;
+	margin-left: 2%;
+}
+.one-box img:hover{
+	-moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+
+.two-big-box{
+	width: 100%;
+	padding: 0;
+	background-image: url('../image/labour/img-10.png');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+.two-box{
+	width: 100%;
+	margin: 5% auto;
+}
+.two-box img:hover{
+	-moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+
+
+.three-box{
+	width: 100%;
+	margin: 5% auto;
+}
+.three-box ul{
+	width: 100%;
+	margin: 0 auto;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.three-box ul li{
+	width: 33%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	position: relative;
+}
+.three-box ul li img{
+	width: 50%;
+	vertical-align:middle;
+	display:inline-block;
+	-webkit-transition: -webkit-transform 1s ease-out;
+    -moz-transition: -moz-transform 1s ease-out;
+    -o-transition: -o-transform 1s ease-out;
+    -ms-transition: -ms-transform 1s ease-out;
+}
+.three-box ul li img:hover {
+	-webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+.three-box ul li p{
+	margin-top: 10%;
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+}
+
+
+
+.four-box{
+	width: 100%;
+	margin: 5% auto;
+}
+.four-box ul{
+	width: 100%;
+	margin: 0 auto;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.four-box ul li{
+	width: 26%;
+	float: left;
+	position: relative;
+}
+.four-box ul li img{
+	width: 100%;
+}
+.four-box ul li div{
+	width: 100%;
+	height: 56%;
+	position: absolute;
+	bottom: 0%; left: 0%;
+	background: rgba(242,109,0, 0.9);
+	cursor: pointer;
+	overflow: hidden;
+	display: none;
+}
+.four-box ul li div p{
+	width: 80%;
+	margin: 0 auto;
+	font-size: 18px;
+	color: #ffffff;
+	padding: 10% 1%;
+}
+.four-box ul li p{
+	font-size: 24px;
+	color: #333;
+	margin-top: 8%;
+	text-align: center;
+}
+.four-box ul li:hover div{
+	display: block;
+}
+@media screen and (max-width:1900px) {
+	.four-box ul li div p{font-size: 14px;}
+	.four-box ul li p{font-size: 18px;}
+}
+
+
+
+.five-box{
+	width: 100%;
+	margin: 5% auto;
+}
+.five-box img{
+	width: 100%;
+}
+.five-box img:hover{
+	-moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+/*  点击咨询按钮 */
+.search-box{
+	width: 25%;
+	display: block;
+	background-color: #f26d00;
+	border-radius: 8px;
+	margin:0 auto;
+	padding: 1.5% 0;
+	position: relative;
+}
+.search-box span{
+	font-size: 18px;
+	color: #fff;
+	display: block;
+	text-align: right;
+	margin-right: 15%;
+}
+.search-box img{
+	width: 7%;
+	height: 70%;
+	position: absolute;
+	top: 15%;
+	left: 13%;
+}

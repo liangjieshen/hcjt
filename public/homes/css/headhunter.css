@@ -1,0 +1,309 @@
+.middle{
+	margin: 0;
+	padding: 1% 0;
+	background-image: url('../image/agent/bg-1.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+}
+.middle-two{
+	width: 100%;
+}
+.content{
+	margin: 5% auto;
+}
+.banner{
+	width: 100%;
+	position: relative;
+}
+.banner img{
+	width: 100%;
+}
+.banner .banner-box{
+	position: absolute;
+	top:30%;
+	left:18%;
+}
+.banner .banner-box p{
+	font-size: 72px;
+	display: block;
+	color: #fff;
+	text-align: left;
+}
+.banner .banner-box span{
+	font-size: 30px;
+	color: #fff;
+	display: block;
+	text-align: left;
+	margin: 2% 0;
+}
+.banner .banner-box a{
+	font-size: 30px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	padding: 2% 6%;
+	text-align: left;
+	line-height: 150px;
+}
+.banner .banner-box a:hover{
+	background-color: #f26d00;
+}
+
+
+.content-one{
+	width: 100%;
+	margin: 5% auto 0;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.content-one li{
+	width: 21%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	position: relative;
+}
+.content-one li .one-box{
+	width: 100%;
+	margin: 0 auto;
+}
+.content-one li .one-box img{
+	width: 43%;
+}
+.content-one li .one-box .one-min{
+	margin-top: 3%;
+	width: 100%;
+	height: 360px;
+	max-height: 360px;
+	background-color: #fff;
+	position: relative;
+}
+.content-one li .one-box .one-min h3{
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	background-color: #f26d00;
+	padding: 5% 0;
+}
+.content-one li .one-box .one-min p{
+	font-size: 24px;
+	color: #f26d00;
+	text-align: center;
+	margin: 5% auto 0;
+}
+.content-one li .one-box .one-min span{
+	width: 86%;
+	display: block;
+	font-size: 16px;
+	color: #666666;
+	margin: 5% auto 0;
+	text-align: left;
+	line-height: 24px;
+}
+.content-one li .one-box .one-min span em{
+	font-weight: bold;
+	color: #333;
+}
+.content-one li .one-box .one-min a{
+	color: #333;
+	border: 1px solid #cccccc;
+	border-radius: 30px;
+	padding: 7% 13%;
+	position: absolute;
+	bottom: 7%;
+	left: 26%;
+}
+.content-one li .one-box .one-min a:hover{
+	background-color: #f26d00;
+	color: #fff;
+	border: 0;
+}
+@media screen and (max-width: 1900px) {
+	.content-one li .one-box .one-min{height: 328px;}
+	.content-one li .one-box .one-min h3{font-size: 20px;}
+	.content-one li .one-box .one-min p{font-size: 18px;}
+	.content-one li .one-box .one-min span{font-size: 16px;}
+}
+@media screen and (max-width: 1600px) {
+	.content-one li .one-box .one-min{height: 328px;}
+	.content-one li .one-box .one-min h3{font-size: 18px;}
+	.content-one li .one-box .one-min p{font-size: 16px;}
+	.content-one li .one-box .one-min span{font-size: 14px;}
+}
+
+
+
+.content-two{
+	width: 100%;
+	margin: 5% auto 0;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.content-two li{
+	width: 25%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	position: relative;
+}
+.content-two li img{
+	width: 47%;
+}
+.content-two li h1{
+	font-size: 32px;
+	color: #f26d00;
+	text-align: center;
+	margin: 5%;
+}
+.content-two li span{
+	font-size: 20px;
+	font-size: #333333;
+}
+@media screen and (max-width: 1900px) {
+	.content-two li img{width: 42%;}
+	.content-two li h1{font-size: 26px;}
+	.content-two li span{font-size: 18px;}
+}
+
+
+.content-three{
+	width: 90%;
+	margin: 2% auto 0;
+}
+.content-three img{
+	width: 100%;
+}
+
+
+
+.content-four{
+	width: 100%;
+	margin: 0 auto 5%;
+}
+.content-four img{
+	width: 100%;
+	margin-top: 3%;
+}
+.four-bottom{
+	width: 100%;
+	background-color: #fafafa;
+	padding: 2.5% 0;
+}
+.four-bottom h2{
+	font-size: 48px;
+	color: #f26d00;
+	text-align: center;
+}
+.four-bottom p{
+	font-size: 18px;
+	color: #f26d00;
+	text-align: center;
+	line-height: 36px;
+	margin-top: 1%;
+}
+
+
+
+.content-five{
+	width: 100%;
+	margin: 3% auto 5%;
+}
+.content-five img{
+	width: 100%;
+}
+
+
+
+.sketch span{
+	color: #ec3030;
+	font-weight: bold;
+}
+.content-six{
+	width: 100%;
+	margin: 3% auto 5%;
+}
+.content-six img{
+	width: 100%;
+}
+.content-six h3{
+	font-size: 24px;
+	color: #333;
+	margin-top: 5%;
+	text-align: center;
+}
+.content-six h3 em{
+	font-size: 36px;
+	color: #f26d00;
+}
+
+
+
+.hj-bg{
+	width: 100%;
+	background-color: #f3f3f3;
+	display: relative;
+	padding: 1% 0;
+}
+.hj-bg img{
+	width: 100%;
+}
+
+
+/*  点击咨询按钮 */
+.search-box{
+	width: 21%;
+	display: block;
+	background-color: #f26d00;
+	border-radius: 8px;
+	margin:5% auto 0;
+	padding: 1.5% 0;
+	color: #fff !important;
+	text-indent: 2em;
+	position: relative;
+}
+.search-box:hover{
+	color: #fff;
+}
+.search-box:before{
+	content: '';
+	width: 7%;
+	height: 70%;
+	background-image: url(../image/labour/icon-1.png);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	display: inline-block;
+	position: absolute;
+	top: 15%;
+	left: 23%;
+}
+.search-box span{
+	font-size: 18px;
+	color: #fff;
+	display: block;
+	text-align: right;
+	margin-right: 15%;
+}
+.search-box img{
+	width: 7%;
+	height: 70%;
+	position: absolute;
+	top: 15%;
+	left: 13%;
+}

@@ -1,0 +1,464 @@
+/* 您是否遇以下税务难题困扰？-start */
+.nanti {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+	margin:0 auto;
+}
+.nanti li {
+	width: 47%;
+	height: 15rem;
+	background-image: url(../image/taxation/img_1.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	margin-top: 5%;
+}
+.nanti li .nanti-box {
+	width: 84%;
+	margin: 4% auto;
+}
+.nanti li .nanti-box p {
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+.nanti li .nanti-box span {
+	font-size: 2rem;
+	color: #666;
+	display: block;
+	margin-top: 5%;
+	line-height: 3rem;
+	overflow: hidden;
+}
+/* 您是否遇以下税务难题困扰？-end */
+
+
+
+/* 欢创1V1专属定制税筹方案--start */
+.plan-box {
+	width: 80%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+	margin:5% auto 0;
+}
+.plan-box a {
+	width: 47%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	font-size: 2.5rem;
+	background-color: #eeeeee;
+	padding: 6% 0%;
+	cursor: pointer;
+}
+.plan-box a:hover {
+	color: #fff !important;
+	background-color: #f26d00 !important;
+}
+.plan-active {
+	color: #fff !important;
+	background-color: #f26d00 !important;
+}
+.plan-active i {
+	width:0;
+	height:0;
+	border-right:1.5rem solid transparent;
+	border-left:1.5rem solid transparent;
+	border-top:2rem solid #f26d00;
+	position: absolute;
+	top: 98%;
+    left: 20%;
+	display: block;
+}
+.plan-ul {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+	margin:5% auto 0;
+}
+.plan-ul li {
+	width: 25%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	font-size: 2.5rem;
+	padding: 5% 0%;
+	cursor: pointer;
+	border-left: 0.2rem solid #f26d00;
+}
+.plan-ul li:nth-child(1) {
+	border-bottom: 0.2rem solid #f26d00;
+}
+.plan-ul li:nth-child(2) {
+	border-bottom: 0.2rem solid #f26d00;
+}
+.plan-ul li:nth-child(3) {
+	border-bottom: 0.2rem solid #f26d00;
+}
+.plan-ul li:nth-child(4) {
+	border-right: 0.2rem solid #f26d00;
+	border-bottom: 0.2rem solid #f26d00;
+}
+.plan-ul li:nth-child(8) {
+	border-right: 0.2rem solid #f26d00;
+}
+.plan-ul li .plan-ul-img {
+	height: 4rem;
+}
+.plan-ul li .plan-ul-img img {
+	height: 100%;
+}
+.plan-ul li p {
+	font-size: 2rem;
+	margin-top: 5%;
+}
+.plan-li-active {
+	background-color: #f26d00;
+}
+.plan-li-active p{
+	color: #fff;
+}
+/* 欢创1V1专属定制税筹方案--end */
+
+
+
+/* 欢创税务筹划经典案例--start */
+.case-title .big-title-left {
+	display: block;
+	width: 8rem;
+	height: 0.5rem;
+	background-image: url(../image/taxation/img_5.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	position: absolute;
+	top: 35%;
+	left: 14%;
+}
+.case-title .big-title-right {
+	display: block;
+	width: 8rem;
+	height: 0.5rem;
+	background-image: url(../image/taxation/img_6.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	position: absolute;
+	top: 35%;
+	right: 14%;
+}
+.big-title-left {
+	display: block;
+	width: 8rem;
+	height: 0.5rem;
+	background-image: url(../image/taxation/img_5.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	position: absolute;
+	top: 35%;
+	left: 8%;
+}
+.big-title-right {
+	display: block;
+	width: 8rem;
+	height: 0.5rem;
+	background-image: url(../image/taxation/img_6.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	position: absolute;
+	top: 35%;
+	right: 8%;
+}
+.case-box1 {
+	width: 80%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+	margin:5% auto 0;
+}
+.case-box1 a {
+	width: 46%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	font-size: 2.5rem;
+	background-color: #eeeeee;
+	padding: 6% 0%;
+	cursor: pointer;
+}
+.case-box1 a:hover {
+	color: #fff !important;
+	background-color: #f26d00 !important;
+}
+.case-box2 {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+	margin:5% auto 0;
+}
+.case-box2 a {
+	width: 31%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	font-size: 2.5rem;
+	background-color: #eeeeee;
+	padding: 5% 0%;
+	cursor: pointer;
+}
+.case-box2 a:hover {
+	color: #fff !important;
+	background-color: #f26d00 !important;
+}
+.case-active {
+	color: #fff !important;
+	background-color: #f26d00 !important;
+}
+.case-active i {
+	width:0;
+	height:0;
+	border-right:1.5rem solid transparent;
+	border-left:1.5rem solid transparent;
+	border-top:2rem solid #f26d00;
+	position: absolute;
+	top: 98%;
+    left: 20%;
+	display: block;
+}
+
+.table-box{
+	width: 100%;
+	margin-top: 5%;
+	border:0.3rem solid #f26d00;
+}
+.tab{
+	width:100%;
+	border-collapse:collapse;
+}
+.tab:not(:first-child){
+	display: none;
+}
+.tab tr td{
+	width: 33.333%;
+	border:0.1rem solid #f26d00;
+	padding: 2% 0;
+	text-align:center;
+	font-size: 2.3rem;
+	color: #333;
+	position: relative;
+}
+.tab tr td h3{
+	width: 95%;
+	font-size: 2.3rem;
+	line-height: 3rem;
+	margin: 0 auto;
+}
+.tab tr td em{
+	color: #ec3030;
+	font-weight: 600;
+}
+.tab tr td .yun{
+	width: 9rem;
+	height: 150%;
+	background-image: url('../image/taxation/img_2.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	position: absolute;
+	bottom: -20%;
+	right: 48%;
+}
+.tab tr td .yun em{
+	font-size: 3rem;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	margin-top: 28%;
+    margin-left: 10%;
+}
+/* 欢创税务筹划经典案例--end */
+
+
+
+/* 220+直营税优园区-start */
+.map-tit {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+	margin:5% auto 0;
+}
+.map-tit p{
+	width: 30%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	font-size: 2rem;
+	background-color: #f26d00;
+	color: #fff;
+	padding: 2% 0%;
+}
+.map-tit p span {
+	color: #333;
+}
+.map-con {
+	width: 100%;
+	margin-top: 5%;
+}
+.map-con p {
+	font-size: 2.3rem;
+	line-height: 4rem;
+}
+.map-con p span {
+	color: #ff2626;
+}
+.map-img {
+	width: 90%;
+	margin: 0 auto;
+}
+.map-img img {
+	width: 100%;
+}
+/* 220+直营税优园区-end */
+
+
+
+/* 欢创专业定制个性化服务优势--start */
+.good-ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.good-ul li{
+	width: 50%;
+	margin-top: 3%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	position: relative;
+}
+.good-ul li div{
+	width: 92%;
+	border: 0.2rem solid #f26d00;
+	box-shadow: 0.2rem 0.2rem 0.8rem 0.4rem #f3f3f2;
+	margin: 0 auto;
+}
+.good-ul li div h3{
+	font-size: 2.5rem;
+	color: #fff;
+	background-color: #f26d00;
+	padding:5% 0;
+	text-align: center;
+}
+.good-ul li div p{
+	width: 70%;
+	margin: 15% auto;
+	font-size: 2rem;
+	color: #666;
+	line-height: 3.5rem;
+}
+.good-ul li div p span{
+	color: #ec3030;
+	font-weight: 600;
+}
+/* 欢创专业定制个性化服务优势--end */
+
+
+
+/*服务流程--start*/
+.flow-path-img {
+	width: 92%;
+	margin: 0 auto;
+}
+.flow-path-img img {
+	width: 100%;
+}
+/*服务流程--end*/
+
+
+
+/* 企业合作--start */
+.cooperation-box{
+    
+}
+.cooperation-box ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+
+}
+.cooperation-box ul li{
+	width: 23.3%;
+	margin-top: 2%;
+	float: left;
+}
+.cooperation-box ul li img{
+	width: 100%;
+	height: 100%;
+}
+/* 企业合作--end */

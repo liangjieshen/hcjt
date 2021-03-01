@@ -1,0 +1,213 @@
+/* 服务场景--start */
+.changjing {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-around;
+}
+.changjing .changjing-box {
+	width: 50%;
+	float:left;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.changjing .changjing-box .changjing-box-box {
+	width: 90%;
+	height: 36rem;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 0 1rem #999;
+	margin-top: 10%;
+}
+.changjing .changjing-box .changjing-box-box .changjing-box-img {
+	height: 12rem;
+}
+.changjing .changjing-box .changjing-box-box .changjing-box-img img{
+	margin-top: 10%;
+}
+.changjing .changjing-box .changjing-box-box p {
+	font-size: 3rem;
+	font-weight: 600;
+	margin: 5% auto;
+}
+.changjing .changjing-box .changjing-box-box span {
+	font-size: 2.3rem;
+	color: #666666;
+	line-height:4rem; 
+}
+/* 服务场景--end */
+
+
+
+/* 我们的服务-start */
+.my-server-bg {
+	padding: 5% 0;
+	background-color: #f4f3f3;
+	display: inline-block;
+}
+.my-server-bg .content-box {
+	margin-top: 3%;
+}
+.my-server {
+	width: 92%;
+	margin-left: 5%;
+	margin-top: 3%;
+	background-color: #fff;
+	border-radius: 1rem;
+	padding: 6% 0;
+	display: inline-block;
+	text-align: center;
+}
+.my-server .my-server-img {
+	width: 12.5rem;
+	float: left;
+	margin-left: 10%;
+}
+.my-server .my-server-right {
+	float: left;
+	margin-left: 5%;
+}
+.my-server .my-server-right p {
+	text-align: left;
+	font-size: 3rem;
+	font-weight: 600;
+	margin: 5% 0;
+}
+.my-server .my-server-right span {
+	font-size: 2.5rem;
+	line-height: 4rem;
+	display: block;
+	text-align: left;
+}
+/* 我们的服务-end */
+
+
+
+/* 服务优势-start */
+.youshi {
+	margin: 0;
+	padding: 5% 0 10%;
+	display: inline-block;
+	background-image: url(../image/agent/img_9.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+}
+.big-title-white {
+	color: #fff;
+}
+.big-title-white:after {
+	content: " ";
+    display: block;
+    margin: 2% auto 0;
+    width: 5rem;
+    height: 0.4rem;
+    background-color: #fff;
+}
+.youshi-tit {
+	width: 100%;
+	margin: 5% auto 0;
+	display: inline-block;
+}
+.youshi-tit span {
+	width: 30%;
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 12%;
+}
+.youshi-tit span:not(:first-child) {
+	margin-left: 15%;
+}
+.youshi-box {
+	width: 100%;
+	display: inline-block;
+	margin-top: 6%;
+	border-top: 0.2rem solid #fff;
+	position: relative;
+}
+.youshi-box ul {
+	width: 90%;
+	margin: 0% auto;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-around;
+}
+.youshi-box ul li {
+	width: 50%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	margin-top: 11%;
+}
+.youshi-box ul li:nth-child(3) {
+	margin-top: 25%;
+}
+.youshi-box ul li:nth-child(4) {
+	margin-top: 25%;
+}
+.youshi-box .youshi-xian {
+	width: 100%;
+	height: 0.1rem;
+	background-color: #fff;
+	position: absolute;
+	top: 57%;
+}
+.youshi-box ul li .youshi-con {
+	width: 90%;
+	height: 22rem;
+	margin: 0% auto;
+	border-radius: 1rem;
+	background-color: #fff;
+	padding: 5% 0;
+}
+.youshi-box ul li .youshi-con span {
+	font-size: 2rem;
+	display: block;
+	margin-top: 5%;
+	line-height: 3.5rem;
+	text-align: center;
+}
+.youshi-shu {
+	position: absolute;
+	top:-40%;
+	left:45%;
+}
+.youshi-active {
+	background-color: #f26d00 !important;
+}
+.youshi-active span {
+	color: #fff;
+}
+/* 服务优势-end */
+
+
+
+/* 更多服务--start */
+.my-server-yinying {
+	box-shadow: 0 0 1rem #999;
+}
+.my-server-yinying .my-server-right p:after {
+	content: " ";
+    display: block;
+    margin: 1% 0 0 0;
+    width: 5rem;
+    height: 0.4rem;
+    background-color: #f26d00;
+}
+/* 更多服务--end */

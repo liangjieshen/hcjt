@@ -1,0 +1,372 @@
+.banner{
+	width: 100%;
+	position: relative;
+}
+.banner img{
+	width: 100%;
+}
+.banner .banner-box{
+	position: absolute;
+	top:23%;
+	left:18%;
+}
+.banner .banner-box p{
+	font-size: 72px;
+	display: block;
+	color: #fff;
+	text-align: left;
+}
+.banner .banner-box span{
+	font-size: 30px;
+	color: #fff;
+	display: block;
+	text-align: left;
+	margin: 2% 0;
+}
+.banner .banner-box a{
+	font-size: 30px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	padding: 2% 6%;
+	text-align: left;
+	line-height: 150px;
+}
+.banner .banner-box a:hover{
+	background-color: #f26d00;
+}
+
+
+.middle-top{
+	width: 100%;
+	padding: 6% 0;
+	background-color: #fafafa;
+}
+.server-ul{
+	width: 100%;
+	margin: 5% auto 0;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.server-ul li{
+	width: 21%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.server-ul li .server-content{
+	width: 100%;
+	margin: 0 auto;
+	height: 315px;
+	padding: 0% 10%;
+	border-radius: 10px;
+	box-shadow: 2px 2px 8px 4px #f3f3f2;
+	position: relative;
+	overflow: hidden;
+}
+.server-ul li .server-content:hover img {
+	transform: scale(1.1);
+	transition: all 1s ease 0s;
+}
+.server-ul li .server-content img{
+    margin: 20% auto 0;
+    width: 42%;
+    height: 31%;
+}
+.server-ul li .server-content .server-content-box{
+	width: 82%;
+	margin:0 auto;
+	margin-top: 10%;
+}
+.server-ul li .server-content p{
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+}
+.server-ul li .server-content span{
+	font-size: 16px;
+	color: #666;
+	line-height: 24px;
+    display: block;
+    margin-top: 5%;
+}
+@media screen and (max-width: 1900px) {
+	.server-ul li .server-content p{font-size: 16px;}
+	.server-ul li .server-content span{font-size: 14px;}
+}
+
+
+
+/*我们的服务*/
+.offer{
+	width: 100%;
+	display: inline-block;
+	margin: 0% auto;
+	padding: 5% 0;
+	position: relative;
+}
+.offer-logo{
+	width: 14%;
+	position: absolute;
+	top: 18%;
+	left: 43%;
+}
+.offer-logo img{
+	margin-top: 30%;
+}
+.offer-box{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.offer-box ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.offer-box ul li{
+	width: 50%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.offer-box ul li .offer-box-img{
+	float: left;
+}
+.offer-box ul li .offer-box-img img{
+	
+}
+.offer-box ul li .offer-content{
+	width: 100%;
+	margin-top: 5%;
+}
+.offer-box ul li .offer-content p{
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	text-align: left;
+}
+.offer-box ul li .offer-content span{
+	font-size: 16px;
+	color: #666;
+	display: block;
+	text-align: left;
+	line-height: 26px;
+	display: block;
+	margin-top: 2%;
+}
+.offer-complex1{
+	width: 50%;
+}
+.offer-complex{
+	width: 50%;
+	float: right;
+}
+@media screen and (max-width: 1900px) {
+	.offer-box ul li .offer-content p{font-size: 16px;}
+	.offer-box ul li .offer-content span{font-size: 14px;}
+}
+
+
+/*服务优势*/
+.youshi{
+    width: 100%;
+    display: inline-block;
+    background-image:url('../image/img-16.png');
+    background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+    margin: 0% auto;
+    padding: 6% 0;
+}
+.youshi .big-title{
+    display: block;
+    font-size: 30px;
+    font-family: "锐利" !important;
+    color:#fff;
+    font-weight: bold;
+    text-align: center;
+    margin:0;
+}
+.youshi .big-title:after{
+    content: " ";
+    display: block;
+    margin: 1% auto;
+    width:41px;
+    height:4px;
+    background-color: #fff;
+}
+.youshi-box{
+    width: 1200px;
+    margin: 0 auto;
+}
+.youshi-box ul{
+	width: 100%;
+	margin: 5% auto 0;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.youshi-box ul li{
+	width: 25%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	position: relative;
+	border-top: 1px solid #fff;
+}
+.youshi-box ul li .youshi-content{
+	width: 90%;
+	height: 66%;
+	margin: 50px auto;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 8% 0;
+}
+.youshi-box ul li .youshi-content:hover img {
+	transform: scale(1.1);
+	transition: all 1s ease 0s;
+}
+.youshi-box ul li .youshi-content img{
+	max-width: 45px;
+	max-height: 40px;
+	vertical-align:middle;
+	display:inline-block;
+}
+.youshi-box ul li .youshi-content p{
+	width: 80%;
+	margin: 5% auto 0;
+}
+.youshi-box ul li .youshi-yuan{
+	max-width: 30px;
+	max-height: 30px;
+	margin: -6% auto;
+	background-image: url('../image/agent/an-yuan.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+}
+.youshi-box ul li .youshi-yuan:after{
+	content: " ";
+	width: 1px;
+	height: 50px;
+	display: inline-block;
+	background-color: #fff;
+	margin: 30px auto;
+
+}
+.guan-yuan{
+	max-width: 30px;
+	max-height: 30px;
+	margin: -6% auto;
+	background-image: url('../image/agent/guan-yuan.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+}
+.guan-yuan:after{
+	content: " ";
+	width: 1px;
+	height: 50px;
+	display: inline-block;
+	background-color: #f26d00;
+	margin: 30px auto;
+}
+
+
+/*更多服务*/
+.more-ul{
+	width: 90%;
+	margin: 5% auto 0;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.more-ul li{
+	width: 38%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	position: relative;
+	background-color: #fff;
+	padding: 5% 3%;
+	box-shadow: 2px 2px 8px 4px #f3f3f2;
+	position: relative;
+}
+.more-ul li:hover img {
+	transform: scale(1.1);
+	transition: all 1s ease 0s;
+}
+.more-ul li img{
+	width:29%;
+	float:left;
+}
+.more-ul li .more-box{
+	width: 52%;
+	float: left;
+	margin-top: -3%;
+    margin-left: 6%;
+}
+.more-ul li .more-box p{
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	text-align: left;
+}
+.more-ul li .more-box p:after{
+	content: " ";
+    display: block;
+    margin-top: 5%;
+    width:41px;
+    height:4px;
+    background-color: #f26d00;
+}
+.more-ul li .more-box span{
+	font-size: 14px;
+	color: #666;
+	display: block;
+	text-align: left;
+	display: block;
+	margin-top: 5%;
+}
+.more-ul li .more-box a{
+	font-size: 16px;
+	color: #f26d00;
+	border: 1px solid #f26d00;
+	padding: 3% 3%;
+	position: absolute;
+	bottom: 12%;left: 38%;
+}
+.more-ul li .more-box a:hover{
+	color: #fff;
+	background-color: #f26d00;
+}

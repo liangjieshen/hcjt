@@ -1,0 +1,334 @@
+body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6{margin:0;padding:0;border: 0;color:#333;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+input,textarea,select{outline:none; -webkit-appearance:none;} /* 清除IOS下按钮原生样式 */
+textarea{resize:none;} /* 不允许调整元素宽高 */
+table{border-collapse:collapse;} /* 为表格设置合并边框模型 */
+input,select,textarea{outline:none;border:none;background:none;} /* 清除默认样式 */
+a{text-decoration:none;outline:none;cursor:pointer;color: #333;line-height:0;}
+em,i,b,p,span{font-style:normal;color:#333;}
+li,ol{list-style:none;}
+body{width:100%;margin: 0 auto;background: #fff;font:16px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;padding-top:15%;padding-bottom: 20%;}
+img{border:none;max-width:100%;vertical-align:top;}
+a:link{text-decoration:none; }  /* 指正常的未被访问过的链接*/
+a:visited{text-decoration:none; }/*指已经访问过的链接*/
+a:hover{text-decoration:none;}/*指鼠标在链接*/}
+a:active{text-decoration:none;}/* 指正在点的链接*/  
+
+/*公共宽度*/
+.content {
+	width: 100%;
+	margin-top: 10%;
+}
+.content-box {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+.head-top{
+	width: 100%;
+	display: inline-block;
+	padding: 3% 0;
+	background-color: #fff;
+	box-shadow: 0rem 0.2rem 0.2rem rgb(153,153,153,0.4)
+}
+.logo{
+	float: left;
+	margin-left: 10%;
+}
+.nav-btn {
+	float:right;
+	margin-right: 10%;
+}
+.nav-btn li{
+	float: right;
+}
+.nav-btn li:not(:first-child){
+	margin-right: 5rem;
+}
+
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+	max-height: 100%;
+}
+.open-navbar {
+    transition: all .5s ease!important;
+    transform: translateX(0)!important
+}
+
+.shadow::before {
+    position: fixed;
+    display: block;
+    content: '';
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(6, 12, 34, 0.7)!important;
+    transition: all .3s ease-in;
+}
+.navbar-right {
+	height: 100%;
+	margin:0;
+    background:rgba(0, 0, 0, 0.4);
+    transition: all .3s ease-in;
+    transform: translateX(100%);
+    width: 38%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9998;
+}
+.navbar-shadow {
+	height: 100%;
+	margin:0;
+    background:rgba(0, 0, 0, 0.8);
+    transition: all .3s ease-in;
+    transform: translateX(0);
+    width: 38%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9998;
+}
+.navbar {
+	height: 100%;
+	padding: 6% 0;
+	margin:0;
+    background: rgba(6, 12, 34, 0.9)!important;
+    transition: all .5s ease;
+    transform: translateX(-100%);
+    width: 62%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+}
+.navbar-nav{margin:0;}
+
+.nav-link{width: 60%;margin:0 auto;}
+
+.collapse:not(.show) {
+    display: block;
+    height: 100%;
+}
+.nav-item:not(:first-child){
+	margin-top: 10%;
+}
+.navbar-nav{
+	height: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: column;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.navbar-nav .active{
+	background-color: #f26d00;
+}
+.nav-item{
+	font-size: 2rem;
+	color: #fff;
+	line-height: 5rem;
+	text-align: center;
+	border-radius: 0.5rem;
+}
+.nav-item:active{
+	background-color: #f26d00;
+}
+
+
+/*banner--start*/
+.banner{width: 100%;margin: 0 auto;}
+.banner>img{
+	-moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+.banner .carousel-inner .item{width:100%;}
+.banner .carousel-inner .item img{width: 100%;height: auto;}
+/*banner--end*/
+
+
+
+/*底部--start*/
+.am-menu {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  overflow: hidden;
+  z-index: 9999;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  background-color: #f26d00;
+}
+
+.am-menu-column {
+  	width: 20%;
+  	float: left;
+}
+.am-menu-column .am-menu-img{
+	height: 5rem;
+}
+.am-menu-column .am-menu-img img{
+	height: 100%;
+}
+.am-menu-column span {
+  display: block;
+  font-size: 2.2rem;
+  color: #fff;
+  margin-top: 18%;
+}
+/*底部--end*/
+
+
+
+/*大标题--start*/
+.big-title {
+	display: block;
+	font-size: 3.3rem;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+}
+.big-title:after {
+	content: " ";
+	display: block;
+	margin: 2% auto 0;
+	width:5rem;
+	height:0.4rem;
+	background-color: #f26d00;
+}
+.big-title span {
+	color: #ff2626;
+}
+.big-title-white {
+	color: #fff;
+}
+.big-title-white:after {
+	content: " ";
+	display: block;
+	margin: 2% auto 0;
+	width:5rem;
+	height:0.4rem;
+	background-color: #fff;
+}
+.sketch {
+	font-size: 2rem;
+	text-align: center;
+	color:#666666;
+	display: block;
+	line-height: 5rem;
+	margin-bottom: 1%;
+}
+.sketch span {
+	color: #ff2626;
+}
+/*大标题--end*/
+
+
+
+/* 查一查--start */
+.search-box{
+	width: 60%;
+	display: inline-block;
+	border: 0.1rem solid #f26d00;
+	border-radius: 5rem;
+	margin:5% 0 0 20%;
+	padding: 1% 0;
+	position: relative;
+    cursor: pointer;
+}
+.search-box p {
+	font-size: 2.8rem;
+	color: #f26d00;
+	text-align: center;
+}
+.search-box img{
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+}
+/* 查一查--end */
+
+
+
+
+/* 预约弹窗--start */
+#order{ 
+    position:fixed;left:0px;top:0px;
+    background:rgba(0, 0, 0, 0.4);
+    width:100%;  /*宽度设置为100%，这样才能使隐藏背景层覆盖原页面*/
+    height:100%;
+    display:none; 
+}
+.order-box {
+	width: 40%;
+	background-color: #fff;
+	box-shadow: 0 0 1rem #999;
+	position: fixed;
+	top: -35%;
+	left: 30%;
+	z-index: 999;
+}
+.order-box img {
+	width: 100%;
+}
+.input-border{
+	width:82%;
+	margin: 8% auto;
+	position: relative;
+}
+.input-border .need-btn{
+	content: "*";
+	width:2rem;
+	height:2rem;
+	color: #f26d00;
+	position: absolute;
+	top: 41%;
+	left: 3%;
+}
+.input-border input{
+	width:100%;
+	height:5rem;
+	border: 1px solid #f26d00;
+	margin: 0;
+	padding: 0;
+	font-size: 2rem;
+	text-indent: 1em;
+}
+.input-border select{
+	width:100%;
+	height:5rem;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #f26d00;
+	font-size: 1.8rem;
+	text-indent: 1em;
+	cursor: pointer;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: url('../../image/xia-jiantou.png') 90% center no-repeat #fff;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+.input-border select::-ms-expand { display: none; }
+.input-border select:focus{outline: none;}
+.order-box .button{
+    width:100%;
+	height:6rem;
+	background-color: #f26d00;
+	border: 0;
+	font-size: 2.4rem;
+	color: #fff;
+	margin: 0;
+	border-radius: 0;
+}
+/* 预约弹窗--end */

@@ -1,0 +1,185 @@
+.yewuwb {
+	margin-top: 5%;
+}
+.yewuwb .yewuwb-img {
+	width: 90%;
+	margin:0 auto;
+	text-align: center;
+}
+.yewuwb .yewuwb-img img {
+	margin:0 auto;
+}
+.yewuwb p {
+	margin-top: 7%;
+	line-height: 3.5rem;
+	font-size: 2rem;
+	text-align: left;
+}
+
+
+
+/* 欢创将为您解决什么--start */
+.jiejue-img {
+	width: 100%;
+	margin-top: 5%;
+}
+.jiejue-img img {
+	width: 100%;
+}
+/* 欢创将为您解决什么--end */
+
+
+
+/* 欢创业务外包服务内容--start */
+.server {
+    display: inline-block;
+    background-image: url(../image/personnel/banner-2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    padding: 8% 0;
+}
+.big-title-white {
+	color: #fff;
+}
+.big-title-white:after {
+	content: " ";
+    display: block;
+    margin: 2% auto 0;
+    width: 5rem;
+    height: 0.4rem;
+    background-color: #fff;
+}
+.server ul {
+	width: 100%;
+}
+.server ul li {
+	width: 48%;
+	height: 19rem;
+	padding: 5% 0;
+	margin-top: 5%;
+	background-color: #fff;
+	overflow: hidden;
+	float: left;
+}
+.server ul li:nth-child(2) {
+	margin-left: 4%;
+}
+.server ul li:nth-child(4) {
+	margin-left: 4%;
+}
+.server ul li:nth-child(6) {
+	margin-left: 4%;
+}
+.server ul li .server-img {
+	float: left;
+	width: 25%;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+.server ul li .server-con {
+	float: left;
+	width: 68%;
+	margin-left: 2%;
+}
+.server ul li .server-con p {
+	text-align: left;
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+.server ul li .server-con span {
+	display: block;
+	text-align: left;
+	line-height: 3rem;
+	font-size: 1.5rem;
+	margin-top: 3%;
+}
+/* 欢创业务外包服务内容--end */
+
+
+
+/* 岗位专注--start */
+.gangwei ul {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-around;
+}
+.gangwei ul li {
+	width: 40%;
+	height: 34rem;
+	float:left;
+	margin-top: 5%;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	padding: 5% 0;
+	overflow: hidden;
+	box-shadow: 0 0 1rem #999;
+	position: relative;
+}
+.gangwei ul li .gangwei-bottom {
+	width: 100%;
+	height: 0.6rem;
+	border-radius: 5rem;
+	background-color:#f26d00;
+	position: absolute;
+	bottom: 0%;
+}
+.gangwei ul li .gangwei-img {
+	width: 50%;
+	margin:0% auto;
+}
+.gangwei ul li p {
+	font-size: 3rem;
+	font-weight: 600;
+	text-align: center;
+	margin:5% auto;
+}
+.gangwei ul li span {
+	font-size: 2rem;
+	display: block;
+	text-align: center;
+	line-height: 3.5rem;
+}
+/* 岗位专注--end */
+
+
+
+/* 欢创业务外包优势--start */
+.youshi ul li {
+	width: 100%;
+	margin-top: 5%;
+	overflow: hidden;
+}
+.youshi ul li .youshi-img {
+	width: 12%;
+	float: left;
+	margin-left: 5%;
+	text-align: center;
+}
+.youshi ul li .youshi-img img {
+	margin: 16% auto 0;
+}
+.youshi ul li .youshi-con {
+	width: 78%;
+	float: left;
+	margin-left: 5%;
+}
+.youshi ul li .youshi-con p {
+	text-align: left;
+	font-size: 3rem;
+}
+.youshi ul li .youshi-con span {
+	display: block;
+	text-align: left;
+	font-size: 2rem;
+	line-height: 3.5rem;
+	margin-top: 2%;
+}
+/* 欢创业务外包优势--end */

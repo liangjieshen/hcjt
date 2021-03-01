@@ -1,0 +1,174 @@
+/* 服务场景--start */
+.changjing-nav {
+	width: 70%;
+	margin: 5% auto 0;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.changjing-box2 {
+	width: 100%;
+}
+.changjing-nav .item1 {
+	width: 45%;
+}
+.changjing-nav .item2 {
+	width: 31%;
+}
+.changjing-nav .changjing-nav-box {
+	float: left;
+	height: 27rem;
+	text-align: center;
+	padding: 0 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0 1rem #999;
+}
+.changjing-nav .changjing-nav-box-img {
+	margin-top: 10%;
+}
+.changjing-nav p {
+	font-size: 2rem;
+	text-align: center;
+	line-height: 3.8rem;
+	margin-top: 10%;
+}
+/* 服务场景--end */
+
+
+
+/* 欢创能提供的服务--start */
+.tigong {
+	display: inline-block;
+	padding: 8% 0;
+	background-color: #f4f3f3;
+}
+.tigong-box {
+	width: 100%;
+	border-radius:1rem;
+	background-color:#fff;
+	display: inline-block;
+	margin-top: 5%;
+	padding: 5% 0;
+}
+.tigong-box .tigong-box-content {
+	width: 48%;
+	float: left;
+}
+.tigong-box .tigong-box-content:not(:first-child) {
+	margin-left: 2%;
+}
+.tigong-box .tigong-box-content .tigong-box-content-img {
+	float: left;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+.tigong-box .tigong-box-content .tigong-box-content-font {
+	float: left;
+	margin-left: 5%;
+}
+.tigong-box .tigong-box-content .tigong-box-content-font p {
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+.tigong-box .tigong-box-content .tigong-box-content-font span {
+	font-size: 2rem;
+}
+/* 欢创能提供的服务--end */
+
+
+
+/* 欢创人力外包的优势--start */
+.youshi-img {
+	width: 100%;
+	margin:8% auto;
+	padding-bottom: 8%;
+}
+.youshi-img img {
+	width: 100%;
+}
+/* 欢创人力外包的优势--end */
+
+
+
+/* 我们的服务保障--start */
+.baozhang {
+	margin:0;
+	display: inline-block;
+	background-image: url(../image/outsource/img_12.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	padding: 8% 0;
+}
+.baozhang-column {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.baozhang-column .baozhang-box {
+	width: 48%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	padding: 8rem 0;
+	border-radius: 1rem;
+	background-color: #fff;
+	margin-top: 5%;
+}
+.baozhang-column .baozhang-box p {
+	font-size: 2.7rem;
+	font-weight: 600;
+	margin: 5% auto;
+}
+.baozhang-column .baozhang-box span {
+	font-size: 2rem;
+	color: #666;
+	line-height: 4rem;
+}
+.baozhang-column .baozhang-box span em {
+	color: #f72e2e;
+}
+/* 我们的服务保障--end */
+
+
+
+/* 企业合作--start */
+.cooperation-box{
+    
+}
+.cooperation-box ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+
+}
+.cooperation-box ul li{
+	width: 23.3%;
+	margin-top: 2%;
+	float: left;
+}
+.cooperation-box ul li img{
+	width: 100%;
+	height: 100%;
+}
+/* 企业合作--end */

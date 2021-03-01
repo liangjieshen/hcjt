@@ -1,0 +1,103 @@
+.jieshao {
+	width: 90%;
+	margin: 2% auto 0;
+}
+.jieshao img {
+	width: 100%;
+	margin-left: 5%;
+}
+
+
+
+/* 服务内容--start */
+.neirong {
+	width: 100%;
+	margin: 2% auto 0;
+}
+.neirong img {
+	width: 100%;
+}
+/* 服务内容--end */
+
+
+
+/* 我们将帮您解决什么？--start */
+.jiejue {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-around;
+	margin-top: 5%;
+}
+.jiejue li {
+	width: 33%;
+	float:left;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.jiejue li .jiejue-img {
+	width: 60%;
+	margin:0 auto;
+}
+.jiejue li .jiejue-img img {
+	width: 100%;
+}
+.jiejue li p {
+	margin-top: 5%;
+	font-size: 2rem;
+	line-height: 3.2rem;
+}
+/* 我们将帮您解决什么？--end */
+
+
+
+/* 欢创劳务派遣用工优势--start */
+.youshi {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-around;
+	margin-top: 5%;
+}
+.youshi li {
+	width: 30%;
+	float:left;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.youshi li .youshi-img {
+	width: 100%;
+	margin:0 auto;
+}
+.youshi li .youshi-img img {
+	width: 100%;
+}
+.youshi li p {
+	margin-top: 5%;
+	font-size: 2rem;
+	line-height: 3.2rem;
+}
+/* 欢创劳务派遣用工优势--end */
+
+
+
+/* 专业成就品质，服务铸造未来--start */
+.labour-bottom {
+	width: 100%;
+}
+.labour-bottom img {
+	width: 100%;
+}
+/* 专业成就品质，服务铸造未来--end */

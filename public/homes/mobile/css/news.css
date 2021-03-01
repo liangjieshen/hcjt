@@ -1,0 +1,100 @@
+.nav-menu {
+	height: 8rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.nav {
+	height: 100%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	/*解决ios上滑动不流畅*/
+	-webkit-overflow-scrolling: touch;
+}
+
+.con {
+	width: 224%;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	border-bottom: 0.1rem #ccc solid;
+	margin-left: -3%;
+}
+
+.con>a {
+	text-align: center;
+	width: auto;
+	color: #666;
+	display: inline-block;
+	font-size: 2rem;
+	height: 4rem;
+}
+
+.con>a.active {
+	font-size: 2.5rem;
+	border-bottom: 0.3rem rgb(255, 123, 0) solid;
+	color: rgb(255, 123, 0);
+}
+
+
+.container ::-webkit-scrollbar {
+display: none;
+}
+
+
+
+
+.news-list:not(:first-child) {
+	display: none;
+}
+.news-list .news-list-ul {
+	width: 100%;
+	margin:5% auto;
+	display: inline-block;
+}
+.news-list .news-list-ul li {
+	width: 100%;
+	margin-top: 5%;
+	overflow: hidden;
+}
+.news-list .news-list-ul li .news-list-img {
+	width: 28%;
+	height: 16rem;
+	float: left;
+	text-align: center;
+}
+.news-list .news-list-ul li .news-list-img img {
+	margin: 0% auto 0;
+}
+.news-list .news-list-ul li .news-list-con {
+	width: 67%;
+	float: left;
+	margin-left: 5%;
+}
+.news-list .news-list-ul li .news-list-con p {
+	text-align: left;
+	font-size: 3rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	line-height: 4rem;
+}
+.news-list .news-list-ul li .news-list-con i {
+	display: block;
+	text-align: left;
+	font-size: 1.5rem;
+	color: #999;
+	line-height: 4rem;
+}
+.news-list .news-list-ul li .news-list-con span {
+	text-align: left;
+	font-size: 2rem;
+	color: #666;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	line-height: 4rem;
+}

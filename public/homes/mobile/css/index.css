@@ -1,0 +1,507 @@
+/*banner下面的导航--start*/
+.top-menu {
+	margin: 0 auto;
+	bottom: 0;
+	text-align: center;
+	overflow: hidden;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	background-color: #f6f6f6;
+}
+.top-menu-column {
+  	width: 25%;
+  	float: left;
+}
+.top-menu-column .top-menu-img{
+	height: 6rem;
+}
+.top-menu-column .top-menu-img img{
+	height: 100%;
+}
+.top-menu-column span{
+	display: block;
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 6rem;
+}
+/*banner下面的导航--end*/
+
+
+
+/*走进欢创--start*/
+.enter-hc .enter-hc-img, .enter-hc-img img  {
+	width: 100%;
+}
+.enter-hc .enter-hc-content {
+	width: 90%;
+	margin: 3% auto;
+}
+.enter-hc .enter-hc-content p {
+	font-size: 3rem;
+	color: #666;
+	line-height: 4rem;
+}
+
+.enter-hc-icon {
+	width: 90%;
+	margin-left: 5%;
+	text-align: center;
+  	overflow: hidden;
+  	border-radius: 1rem;
+  	padding-top: 2rem;
+  	box-shadow: 0 0 1rem #999;
+}
+.enter-hc-icon .enter-hc-column {
+	width: 33.333%;
+	float: left;
+}
+.enter-hc-icon .enter-hc-column .enter-hc-column-img {
+	height: 5rem;
+}
+.enter-hc-icon .enter-hc-column .enter-hc-column-img img {
+	height: 100%;
+}
+.enter-hc-icon .enter-hc-column span {
+	display: block;
+	font-size: 2.5rem;
+	line-height: 6.5rem;
+	color: #666666;
+}
+/*走进欢创--end*/
+
+
+
+
+/*我们的服务--start*/
+.my-server {
+	display: inline-block;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #f6f6fa;
+}
+.my-server-ul {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.my-server-ul li {
+	width: 33.333%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	overflow: hidden;
+	margin-top: 5%;
+}
+/*.my-server-ul li .my-server-img {
+	height: 7rem;
+}
+.my-server-ul li .my-server-img img {
+	height: 100%;
+}*/
+.my-server-ul li span {
+	display: block;
+	font-size: 3rem;
+	line-height: 6rem;
+}
+/*我们的服务--end*/
+
+
+
+
+/*服务流程--start*/
+.flow-path .flow-path-img {
+	width: 92%;
+	margin: 0 auto;
+}
+.flow-path .flow-path-img img {
+	width: 100%;
+}
+/*服务流程--end*/
+
+
+
+/*十大优势--start*/
+.advantage .advantage-img {
+	width: 100%;
+}
+/*十大优势--end*/
+
+
+
+/*行业案例--start*/
+.case {
+	display: inline-block;
+	background-color: #f26d00;
+	padding: 5% 0;
+}
+.case .case-left {
+	width: 70%;
+	float: left;
+}
+.case-left-box:not(:first-child) {
+	display: none;
+}
+.case .case-left h3 {
+	display: block;
+	font-size: 4rem;
+	color: #fff;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	text-align: left;
+}
+.case .case-left h3:after {
+	content: " ";
+	display: block;
+	margin: 7% 0;
+	width:6rem;
+	height:0.4rem;
+	background-color: #fff;
+}
+.case .case-left span {
+	font-size: 1.5em;
+	color:#fff;
+	line-height: 4.5rem;
+}
+.case .case-left ul {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-around;
+	margin-top: 5%;
+}
+.case .case-left ul li {
+	width: 20%;
+	float:left;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.case .case-left ul li img {
+	max-width: 90%;
+}
+.case .case-right {
+	width: 30%;
+	float: right;
+}
+.case .case-right ul{
+	width:100%;
+}
+.case-active{
+	background-color: #fff !important;
+	color:#f26d00 !important;
+	border-radius: 0.8rem !important;
+}
+.case .case-right ul li{
+	width:60%;
+	margin:1.2rem auto;
+	padding: 2% 0;
+}
+.case .case-right ul li a{
+	display: inline-block;
+	width: 100%;
+	font-size: 2.5rem;
+	color:#fff;
+	text-align: center;
+	line-height: 4rem;
+	cursor: pointer;
+	margin-left: 30%;
+}
+.case .case-right ul li a:hover{
+	background-color: #fff;
+	color:#f26d00;
+	border-radius: 0.8rem;
+}
+/*行业案例--end*/
+
+
+
+/*证书--start*/
+.certificate{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+	margin:0 auto;
+	display: none;
+}
+.certificate:nth-child(1){
+	display: block;
+}
+.certificate li{
+	width: 33%;
+	float:left;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	margin-top: 3%;
+}
+.certificate li img {
+	max-width: 90%;
+}
+.jumpBtn{
+	width: 100%;
+	margin-top: 4%;
+	text-align: center;
+	display: inline-block;
+}
+.jumpBtn ul{
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.jumpBtn ul li{
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: #b5b5b5;
+	opacity: 0.9;
+	margin-left: 2rem;
+}
+.jumpBtn ul li:first-child{
+	margin-left: 0;
+}
+/*证书--end*/
+
+
+
+
+/* 企业合作--start */
+/*企业合作*/
+.cooperate-nav{
+	width: 80%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-around;
+	margin: 0 auto;
+}
+.cooperate-nav:nth-child(2) {
+	margin-top: 5%;
+}
+.cooperate-nav li{
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	cursor: pointer;
+}
+.cooperate-nav li span{
+	border-radius: 2.5rem;
+	border: 0.1rem solid #666666;
+	font-size: 2.5rem;
+	padding: 1rem 3rem;
+	font-weight: 600;
+}
+.cooperate-nav li span:hover{
+	border: 0;
+	background-color: #f26d00;
+	color:#fff;
+}
+.cooperate-nav li .hover{
+	border: 0;
+	background-color: #f26d00;
+	color:#fff;
+}
+.cooperate-box {
+	width: 100%;
+	margin-top: 1%;
+}
+.cooperate-box .cooperate-conent:not(:first-child) {
+	display: none;
+}
+.cooperate-box .cooperate-conent ul {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-around;
+}
+.cooperate-box .cooperate-conent ul li {
+	width: 25%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	margin-top: 3%;
+}
+.cooperate-box .cooperate-conent ul li img {
+	width: 90%;
+}
+/* 企业合作--end */
+
+
+
+/* 用工/财税--start */
+.caisui{
+	font-size: 3.8rem;
+	color:#030303;
+}
+.caisui em{
+	color:#f26d00;
+	font-weight: 600;
+}
+.caisui-num {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-around;
+}
+.caisui-num li {
+	width: 33.333%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	margin-top: 3%;
+}
+.caisui-num li .caisui-num-bg {
+	width: 6rem;
+	height: 6rem;
+	background-image: url(../image/index/img_25.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	margin: 0 auto;
+}
+.caisui-num li .caisui-num-bg i {
+	font-size: 3rem;
+	color: #fff;
+	line-height: 6rem;
+}
+.caisui-num li .caisui-num-content {
+	width: 90%;
+	height: 18rem;
+	background-image: url(../image/index/img_24.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	margin: 3% auto 0;
+	overflow: hidden;
+	position: relative;
+}
+.caisui-num li .caisui-num-content .caisui-num-content-box {
+	width: 76%;
+	margin: 24% auto 0;
+}
+.caisui-num li .caisui-num-content .caisui-num-content-box p {
+	font-size: 2.5rem;
+	color: #fff;
+	text-align: left;
+}
+/* 用工/财税--end */
+
+
+
+/* 新闻--start */
+.news-nav-box {
+	width: 100%;
+	margin-top: 5%;
+	padding-bottom: 2rem;
+	border-bottom: 0.2rem solid #ccc;
+}
+.news-nav {
+	width: 90%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+	margin:0 auto;
+}
+.news-nav li {
+	width: 20%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.news-nav li a {
+	font-size: 2.5rem;
+	color: #666;
+	padding-bottom: 1.8rem;
+}
+.news-active {
+	color: #f26d00;
+	border-bottom: 0.4rem solid #f26d00;
+}
+
+.news-box-item:not(:first-child){
+	display: none;
+}
+.news-box {
+	width: 100%;
+	display: inline-block;
+	margin-top: 5%;
+}
+.news-box-left {
+	width: 33%;
+	float: left;
+}
+.news-box-left img {
+	width: 100%;
+}
+.news-box-right {
+	width: 65%;
+	float: right;
+}
+.news-box-right h3 {
+	font-size: 3rem;
+	font-weight: 600;
+	text-align: left;
+}
+.news-box-right i {
+	font-size: 2rem;
+	color: #999;
+}
+.news-box-right span {
+	display: block;
+	margin-top: 3rem;
+	font-size: 2.5rem;
+	color: #666;
+	line-height: 4rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+/* 新闻--end */

@@ -1,0 +1,730 @@
+/*横向布局*/
+@media only screen and (orientation: landscape) {
+
+}
+*{-webkit-box-sizing:border-box; /* 设置盒模型为内减模式 */-moz-box-sizing:border-box;box-sizing:border-box;}
+html{font-family:"microsoft yahei",Helvetica,Arial,sans-serif !important;font-weight:normal;font-style:normal;}
+body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6{margin:0;padding:0;border: 0;color:#333;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+input,textarea,select{outline:none; -webkit-appearance:none;} /* 清除IOS下按钮原生样式 */
+textarea{resize:none;} /* 不允许调整元素宽高 */
+table{border-collapse:collapse;} /* 为表格设置合并边框模型 */
+input,select,textarea{outline:none;border:none;background:none;} /* 清除默认样式 */
+a{text-decoration:none;outline:none;cursor:pointer;color: #333;line-height:0;}
+em,i,b,p,span{font-style:normal;color:#333;}
+li,ol{list-style:none;}
+body{width:100%;margin: 0 auto;background: #fff;font:14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;}
+img{border:none;max-width:100%;vertical-align:top;}
+.clearfix{*zoom:1;}.clearfix:after{display:block;overflow:hidden;clear:both;height:0;visibility:hidden;content:".";}
+.fl{float: left;}
+.fr{float: right;}
+.both{clear: both;}
+/* 修改plachholder颜色 */
+input::-webkit-input-placeholder { /* WebKit browsers */
+color: #8f8f8f;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #8f8f8f;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: #8f8f8f;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+color: #8f8f8f;
+}
+body{font-family: "微软雅黑";}
+a:link{text-decoration:none;}  /* 指正常的未被访问过的链接*/
+a:visited{text-decoration:none;}/*指已经访问过的链接*/
+a:hover{text-decoration:none;}/*指鼠标在链接*/}
+a:active{text-decoration:none;}/* 指正在点的链接*/ 
+/*img:hover{transform: scale(1.1);transition: all 1s ease 0s;}*/
+
+.button:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FF7F50), color-stop(1, #FF8C00) );
+    background:-moz-linear-gradient( center top, #FF7F50 5%, #FF8C00 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF7F50', endColorstr='#FF8C00');
+}
+.button:active {
+	font-size: 16px !important;
+	background-color: #f26d00;
+}
+.button{
+    background-color:#f26d00;
+    border-radius:9px;
+    -webkit-border-radius:9px;
+    -moz-border-border-radius:9px;
+    /*border:1px solid #ee1eb5;*/
+    border: 0;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:16px;
+    font-weight:bold;
+    font-style:normal;
+    cursor: pointer;
+}
+.input-border{
+	width:82%;
+	margin: 8% auto;
+	position: relative;
+}
+.input-border .need-btn{
+	content: "*";
+	width:18px;
+	height: 18px;
+	color: #f26d00;
+	position: absolute;
+	top: 41%;
+	left: 3%;
+}
+.input-border input{
+	width:100%;
+	height:40px;
+	border: 1px solid #f26d00;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	text-indent: 1em;
+}
+.input-border select{
+	width:100%;
+	height:40px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #f26d00;
+	font-size: 16px;
+	text-indent: 1em;
+	cursor: pointer;
+	/*padding-right: 16px;*/
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: url('../image/xia-jiantou.png') 90% center no-repeat #fff;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+.input-border select::-ms-expand { display: none; }
+.input-border select:focus{outline: none;}
+.input-border textarea{
+	width:100%;
+	height:96px;
+	border: 1px solid #f26d00;
+	font-size: 16px;
+	text-indent: 1em;
+}
+.input-border .button{
+    width:100%;
+	height:40px;
+	background-color: #f26d00;
+	border: 0;
+	font-size: 24px;
+	color: #fff;
+	margin: 0;
+	border-radius: 0;
+}
+.order-box .button{
+	width:100%;
+	height:34px;
+	background-color: #f26d00;
+	border: 0;
+	font-size: 18px;
+	color: #fff;
+	margin: 0;
+	border-radius: 0;
+}
+/*input框样式-结束*/
+
+
+
+/*头部样式--开始*/
+#header{
+	width: 100%;
+    background: #fff;
+}
+.header-one{
+	width: 100%;
+	padding: 4px 0;
+	display: inline-block;
+	background-color: #f26d00;
+}
+.header-one .header-one-box{
+    width: 1200px;
+	margin: 0 auto;
+}
+.header-one .ziti{
+	float:left;
+	font-size: 14px;
+	color:#fff;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+.header-one ul{
+    width: 40%;
+	padding: 0;
+	float:right;
+}
+.header-one ul li{
+	float:right;
+}
+.header-one ul li:not(:first-child){
+    margin-right: 3%;
+}
+.header-one ul li a{
+	font-size: 14px;
+	color:#fff;
+}
+.header-one ul li a:hover{
+	text-decoration: none;
+	color: #ed3030;
+}
+
+.header-two{
+	width: 100%;
+	/*padding: 1% 0;*/
+	display: inline-block;
+	border-bottom: 1px solid #f26d00;
+}
+.header-two .header-two-box{
+	width: 1200px;
+	margin: 0 auto;
+}
+.header-two .header-two-box .header-two-box-1{
+	float: left;
+}
+.header-two .header-two-box .header-two-box-2{
+	float: right;
+}
+.header-two .header-two-box .header-two-box-2 img {
+	margin-top: 4%;
+}
+
+
+nav{
+    width: 100%;
+    padding: 1% 0;
+    background: #fff;
+    z-index: 9999;
+    webkit-box-shadow:0px 2px 2px rgb(153,153,153,0.4);
+ 	-moz-box-shadow:0px 2px 2px rgb(153,153,153,0.4);
+ 	box-shadow:0px 2px 2px rgb(153,153,153,0.4);
+}
+.main{
+	width: 1200px;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+	margin: 0% auto;
+}
+.main li{
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.main li:first-child{
+	margin-left: 0;
+}
+.main li a{
+	font-size: 16px;
+	color:#333333;
+}
+.main li a:hover{
+	border-bottom: 3px solid #f26d00;
+	color:#f26d00;
+	padding:6% 0;
+}
+.nav_active{
+	text-decoration: none;
+	border-bottom: 3px solid #f26d00;
+	color:#f26d00;
+	padding:6% 0;
+}
+
+
+/*底部样式*/
+.footer{
+	width: 100%;
+	padding: 2.5% 0 0;
+	background-image: url('../image/bottom.png');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	display: inline-block;
+}
+.footer-box{
+	width: 1200px;
+	margin:0 auto;
+}
+.left-box{
+	width: 28%;
+	float: left;
+	padding: 0 0 2.5%;
+}
+.left-box>p{
+	font-size: 24px;
+	color: #fff;
+}
+.left-box>h1{
+	font-size: 40px;
+	color: #f26d00;
+	line-height: 72px;
+}
+.left-box>ul{
+	margin-top: 2%;
+}
+.left-box>ul>li{
+	margin-top: 5%;
+	line-height: 24px;
+}
+.left-box>ul>li>img{
+    width: 7%;
+	display: inline-block;
+	margin-bottom: -1%;
+}
+.left-box>ul>li>span{
+	font-size: 20px;
+	color: #999999;
+	margin-left: 5%;
+}
+.left-box-bottom-left{
+	width: 35%;
+	float: left;
+	margin-top: 5%;
+}
+.left-box-bottom-left>img{
+	width: 80%;
+}
+.left-box-bottom-left>span{
+	font-style: 24px;
+	color: #cccccc;
+	display: block;
+	text-align: center;
+	margin-top: 5%;
+}
+.left-box-bottom-right{
+	width: 35%;
+	float: right;
+	margin-top: 5%;
+	margin-right: 10%;
+}
+.left-box-bottom-right>img{
+	width: 80%;
+	margin-left: 10%;
+}
+.left-box-bottom-right>span{
+	font-style: 24px;
+	color: #cccccc;
+	display: block;
+	text-align: center;
+	margin-top: 5%;
+}
+.right-box{
+	width: 70%;
+	float: right;
+}
+.bottom-main{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.bottom-main li{
+	float:left;
+	margin:0;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.bottom-main li a{
+	font-size: 18px;
+	color: #fff;
+}
+.bottom-main li a:hover{
+	color: #f26d00;
+}
+.bottom-main-2{
+	width: 136%;
+	position: absolute;
+	top: 40px;
+	left: 0;
+}
+.bottom-main-2 li{
+	font-size: 16px;
+	color: #999;
+	margin-top: 10%;
+}
+@media screen and (max-width: 1900px) {
+	.left-box>h1{font-size: 32px;}
+	.left-box>ul>li>span{font-size: 14px;}
+    .bottom-main li a{font-size:16px;}
+    .bottom-main-2 li{font-size: 14px;}
+}
+
+
+.footer-bottom{
+	width: 100%;
+	padding: 1% 0;
+	display: inline-block;
+	background-color: #333333;
+	border-top: 1px solid #999999;
+}
+.bottom-box{
+	width: 1200px;
+	margin:0 auto;
+}
+.bottom-box>p{
+	font-size: 16px;
+	color: #7d7d7d;
+}
+.bottom-box>p>span{
+	font-size: 16px;
+	color: #7d7d7d;
+	margin-left: 5%;
+}
+.bottom-box>p>a{
+	font-size: 16px;
+	color: #7d7d7d;
+	margin-left: 5%;
+}
+
+
+
+/*公共内容*/
+.banner{width: 100%;margin: 0 auto;}
+.banner>img{
+	width: 100%;
+	-moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+.banner .carousel-inner .item{width:100%;}
+.banner .carousel-inner .item img{width: 100%;height: auto;}
+/*@media screen and (min-width: 1900px) {
+	#myCarousel{width: 66% !important;}
+}*/
+.middle{
+	width: 100%;
+}
+.content{
+	width: 1200px;
+	margin:0 auto;
+}
+.content-top{
+	margin:5% auto 0 !important;
+}
+.layui-carousel img{
+	width: 100%;
+	height: 100%;
+}
+.big-title{
+	display: block;
+	font-size: 36px;
+	font-family: "微软雅黑" !important;
+	color:#000;
+	font-weight: bold;
+	text-align: center;
+	margin:5% 0 0 0;
+}
+.big-title:after{
+	content: " ";
+	display: block;
+	margin: 0.5% auto 0;
+	width:41px;
+	height:4px;
+	background-color: #f26d00;
+}
+.sketch{
+	font-size: 24px;
+	text-align: center;
+	color:#666666;
+	display: block;
+	line-height: 3em;
+}
+@media screen and (max-width:1900px) {
+	.big-title{font-size: 30px;}
+	.sketch{font-size: 16px;}
+}
+@media screen and (max-width:1600px) {
+	.big-title{font-size: 24px;}
+	.sketch{font-size: 14px;}
+}
+
+
+/*固定定位左侧*/
+/*固定定位*/
+.order-box{
+    width: 7%;
+	position: absolute;
+	top:280px;
+	left:0%;
+    box-shadow: 0 0 6px rgba(187, 187, 187, 0.5);
+	background-color: #fff;
+	overflow: hidden;
+	z-index: 999;
+}
+.order-box .input-border input{
+	width: 100%;
+    height: 30px;
+    border: 1px solid #f26d00;
+    font-size: 14px;
+    text-indent: 9px;
+}
+.order-box .input-border input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #333;
+}
+
+.order-box .input-border input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #333;
+}
+
+.order-box .input-border input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #333;
+}
+
+.order-box .input-border input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #333;
+}
+.order-box .input-border select{
+	width: 100%;
+    height: 30px;
+    font-size: 14px;
+    text-indent: 9px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image:url('../image/xia-jiantou.png');
+    background-size: 15% 40%;
+    background-color: #fff;
+}
+.order-box .input-border .need-btn{
+	content: "*";
+    width: 24px;
+    height: 24px;
+    color: #f26d00;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+.order-box>img{
+	width: 100%;
+}
+@media screen and (max-width: 1900px) {
+	.order-box{width: 8%;}
+    .order-box .input-border input{font-size:12px;height: 24px;}
+    .order-box .input-border select{font-size:12px;height: 24px;}
+    .order-box .button{height:28px;font-size:16px;}
+}
+
+
+.receive-box{
+	width:8%;
+	position: fixed;
+	bottom: 0%;
+	left:0%;
+	cursor: pointer;
+	display: none;
+}
+.receive-box img {
+	width: 100%;
+	height: auto;
+}
+/*.receive-box img:hover{*/
+/*	transition: transform 0.35s;*/
+/*	transform: translate(66%,0px);*/
+/*}*/
+
+
+
+
+/*固定右侧定位*/
+.fixed-right{
+	position: fixed;
+	top:30%;
+	right:0;
+}
+.fixed-right li{
+    border-radius: 5px;
+    background-color: #f26d00;
+    /*width: 92px;*/
+    margin-right: -10px;
+    /*height: 74px;*/
+    padding: 15px 10px;
+    margin-bottom: 3px;
+    transition: all 0.3s;
+}
+.fixed-right li.dhlx11:hover{
+    transition: transform 0.3s;
+    transform: translateX(-10px);
+    -ms-transform:transform(-10px);
+}
+.fixed-right li.dhlx:hover{
+    transition: transform 0.3s;
+    transform: translateX(-150px);
+    -ms-transform:transform(-150px);
+}
+.fixed-right li a .right_box_img{
+    width: 25px;
+    margin: 0 auto;
+}
+.fixed-right li a .right_box_int {
+    margin-top: 20%;
+    text-align: center;
+}
+.fixed-right li a .right_box_int span{
+	font-size: 14px;
+    line-height: 2px;
+    color: #fff;
+}
+.fixed-right li.dhlx {
+    width: 280px;
+    margin-right: -190px;
+}
+.dhlx_left{
+	margin-left: 5%;
+}
+.right_box_img01 {
+    text-align: center;
+}
+.right_box_img01 img {
+    width: 25px;
+    margin: 0 auto;
+}
+.right_box_int01 {
+    margin-top: 29%;
+    text-align: center;
+}
+.right_box_int01 span {
+	font-size: 14px;
+    color: #fff;
+}
+.dhzx_box {
+    font-size: 16px;
+    color: #fff;
+    height: 32px;
+    border-left: 1px solid #fff;
+    line-height: 30px;
+    margin-left: 9%;
+    margin-top: 3%;
+    text-indent: 1em;
+}
+.f-cb:after {
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+    content: ".";
+}
+@media screen and (max-width: 1900px) {
+	.fixed-right li a .right_box_img{width: 18px;}
+	.fixed-right li a .right_box_int span{font-size: 12px;}
+	.fixed-right li.dhlx{width: 262px;}
+	.dhlx_left{margin-left:2%;}
+	.right_box_img01 img{width: 18px;}
+	.right_box_int01 span{font-size: 12px;}
+	.dhzx_box{font-size: 14px;}
+}
+
+
+
+
+
+/*页角*/
+.receive-box-son{
+	width: 100%;
+	padding: 2.5% 0;
+	position: fixed;
+	bottom: 0%;
+	left: 0%;
+	z-index: 999;
+    background-color:rgba(103,103,103,0.7);
+}
+.receive-box-son ul{
+	width:88%;
+	margin-left: 25%;
+	display: relative;
+}
+.receive-box-son ul li{
+	width:16%;
+	position: relative;
+	float:left;
+	overflow:hidden;
+}
+.receive-box-son ul li:not(:first-child){
+	margin-left: 3%;
+}
+.receive-box-son ul li input{
+	text-indent: 3em;
+}
+.receive-box-son ul li input, select{
+    width: 100%;
+    background: #fff;
+	height: 36px;
+	border: 0;
+}
+.receive-box-son ul li select{
+    cursor: pointer;
+    padding-right: 16px;
+    padding-left:40px;
+    /*将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -ms-appearance:none;
+   	/*在选择框的最右侧中间显示小箭头图片*/
+   /*background: url(../image/xia-jiantou.png) no-repeat scroll right center transparent #fff;*/
+    background:url('../image/xia-jiantou.png') 90% center no-repeat #fff;
+}
+select::-ms-expand { display: none;}
+
+.receive-box-son ul li i{
+	width: 22px;
+	position: absolute;
+	top: 7%;
+	left: 4%;
+}
+.receive-box-son ul li img{
+	max-width: 100%;
+}
+.receive-box-son ul li button{
+	width: 70%;
+	height: 36px;
+	color: #fff;
+	border-radius: 0;
+}
+.receive-box-son-next{
+	cursor: pointer;
+	width: 2%;
+    position: absolute;
+    right: 5%;
+    top: 28%;
+}
+.receive-box-son-next img{
+    width: 100%;
+}
+.receive-box-son ul .receive-box-son-bg{
+	height: 115%;
+	position: absolute;
+	left:16%;
+	top: -10%;
+}
+.receive-box-son ul .receive-box-son-bg img{
+	height: 100%;
+}
+@media screen and (max-width: 1900px) {
+	.receive-box-son ul li input, select{height: 32px;}
+	.receive-box-son ul li button{height: 32px;}
+}

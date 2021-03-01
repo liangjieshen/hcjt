@@ -1,0 +1,522 @@
+
+/*公共的---start*/
+/*select*/
+.contact-select{
+	text-indent: 0;
+	padding-left:1%;
+	cursor: pointer;
+    /*将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -ms-appearance:none;
+   	/*在选择框的最右侧中间显示小箭头图片*/
+   /*background: url(../image/xia-jiantou.png) no-repeat scroll right center transparent #fff;*/
+    background:url('../image/xia-jiantou.png') 90% center no-repeat #fff;
+}
+/*开头地址*/
+.address{
+	width: 100%;
+	display: inline-block;
+	margin-top: 1%;
+}
+.address p{
+	font-size: 16px;
+	color: #666666;
+}
+.address p a{
+	font-size: 16px;
+	color: #666666;
+	margin-left: 1%;
+}
+.address p a:hover{color: #f26d00;}
+.address p span{
+	font-size: 16px;
+	color: #666666;
+}
+/*公共的---end*/
+
+
+
+
+
+/*发展历程*/
+.history{
+	width: 100%;
+	margin-top: 3%;
+	padding-bottom: 6%;
+	border-bottom: 1px dashed #ccc;
+}
+.history h3{
+	font-size: 30px;
+	color: #333333;
+	text-align: center;
+}
+.history h3:after{
+	content: " ";
+	display: block;
+	width: 41px;
+	height: 4px;
+	background-color: #f26d00;
+	margin: 1% auto;
+}
+.history span{
+	font-size: 18px;
+	color: #cccccc;
+	display: block;
+	text-align: center;
+}
+.history p{
+	width: 100%;
+	margin:2% auto 0;
+	font-size: 18px;
+	color: #666666;
+	line-height: 36px;
+}
+/*发展历程*/
+.history-photo {
+    width: 100%;
+    margin:5% auto;
+}
+.history-photo img {
+    width: 100%;
+    margin-left:6%;
+    
+}
+.history-photo img:hover {
+    -moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+
+
+/*留言*/
+.message-box{
+	width: 100%;
+	margin-top: 1%;
+}
+.message-box ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.message-box ul li{
+	width: 42%;
+	height: 36px;
+	margin-top: 3%;
+	float: left;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	border-bottom: 1px solid #ccc;
+	position: relative;	
+}
+.message-box ul li:last-child{
+	width: 100%;
+}
+.message-box ul li .message-btn{
+	width: 94%;
+	height: 100%;
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	border: 0;
+}
+.message-box ul li:last-child .message-btn{
+	width: 97.5%;
+}
+.message-box ul li i{
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	bottom: 10%;
+	left: 0%;
+}
+.message-box-button{
+	width: 10%;
+	margin: 3% auto;
+}
+.message-box-button .button{
+    width: 100%;
+    padding: 5% 0%;
+}
+
+
+/*公司简介*/
+.profile-title{
+	margin:5% auto;
+	width:200px;
+	height: 100px;
+	background-color: #fff;
+	z-index: 1;
+	position: relative;
+}
+.profile-box{
+	width: 100%;
+	height: 485px;
+	margin-top: -12%;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	position: relative;
+	z-index: 0;
+}
+.profile{
+	width: 90%;
+	height: 75%;
+	margin: 8% auto;
+}
+.profile p{
+	font-size: 18px;
+	color: #333;
+	line-height: 36px;
+}
+
+
+/*公司环境*/
+.content-box{
+	width: 100%;
+	margin:0 auto;
+}
+.environment-top{
+	width: 70%;
+	height: 295px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.environment-top-left{
+	width: 44%;
+	height: 100%;
+	float:left;
+	background-color: #f6f6f6;
+}
+.environment-top-left p{
+	font-size: 24px;
+	color: #333333;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 16%
+}
+.environment-top-left span{
+	width: 60%;
+	margin-left: 20%;
+	font-size: 18px;
+	color: #999999;
+	display: block;
+	margin-top: 5%;
+	line-height: 36px;
+	text-align: center;
+	overflow: hidden;
+}
+.environment-top-right{
+	width: 56%;
+	height: 100%;
+	float:right;
+}
+.environment-top-right img{
+	width: 100%;
+	height: 100%;
+}
+
+.environment-ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+	padding-top: 3%;
+}
+.environment-ul li{
+	width: 29%;
+	/*height: 476px;*/
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	position: relative;
+	background-color: #f3f3f3;
+	overflow: hidden;
+}
+.environment-ul li img{
+	width: 100%;
+}
+.environment-ul li div{
+	width: 67%;
+	height: 110px;
+	margin:9% auto; 
+}
+.environment-ul li div p{
+	font-size: 24px;
+	color: #333333;
+	font-weight: bold;
+	text-align: center;
+}
+.environment-ul li div span{
+	font-size: 16;
+	color: #999999;
+	display: block;
+	margin-top: 5%;
+	line-height: 26px;
+	text-align: center;
+}
+
+
+/*新闻政策*/
+.policy-box{
+	width: 100%;
+	margin:1% auto;
+}
+.policy-left{
+	width: 10%;
+	float: left;
+}
+.policy-left ul{
+	width: 100%;
+}
+.policy-left ul li{
+	position: relative;
+	padding: 10% 0;
+	border-bottom: 1px solid #eeeeee;
+}
+.policy-left ul li:not(:first-child){
+	margin-top: 15%;
+}
+.policy-left ul li a{
+	font-size: 24px;
+	color: #666666;
+	text-decoration: none;
+}
+.policy-left ul li a:hover{
+	color: #f26d00 !important;
+	transform: scale(1.1);transition: all 1s ease 0s;
+}
+.policy-active{
+	color: #f26d00 !important;
+	text-decoration: none;
+}
+.policy-active:before{
+	content: "";
+	width: 3px;
+	height: 32px;
+	background-color: #f26d00;
+	display: block;
+	position: absolute;
+	top: 17%;
+	left: -6%;
+}
+.policy-active{}
+
+.policy-right{
+	width: 80%;
+	float: right;
+}
+.policy-right:not(:first-child){
+	display: none;
+}
+.policy-content{
+	width: 100%;
+	margin-top: 2%;
+	padding: 5% 0;
+	border-top: 1px solid #eee;
+}
+.policy-content img{
+	width: 26.4%;
+	height: 100%;
+	display: block;
+	float: left;
+}
+.policy-content:hover img {
+	transform: scale(1.1);transition: all 1s ease 0s;
+}
+.policy-content:hover span {
+	transform: scale(1.1);transition: all 1s ease 0s;
+}
+.policy-content .policy-content-list{
+	width: 49%;
+	height: 100%;
+	margin-left: 5%;
+	float:left;
+}
+.policy-content .policy-content-list p{
+	font-size: 24px;
+	color: #333;
+}
+.policy-content .policy-content-list span{
+	font-size: 18px;
+	color: #666666;
+	line-height: 36px;
+	margin-top: 10%;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.policy-content .policy-content-time{
+	width: 15%;
+	height: 50%;
+	float: right;
+	margin-top: 15%;
+}
+.policy-content .policy-content-time p{
+	font-size: 24px;
+	color: #666666;
+	float: right;
+}
+.policy-content .policy-content-time img{
+	width:22px;
+	height: 12px;
+	margin-top: 20%;
+	float: right;
+}
+.policy-page{
+	width: 100%;
+	margin: 10% auto;
+}
+@media screen and (max-width: 1900px) {
+	.policy-left ul li a{font-size: 20px;}
+    .policy-content .policy-content-list p{font-size:18px}
+    .policy-content .policy-content-list span{font-size: 16px;}
+    .policy-content .policy-content-time p{font-size: 18px;}
+}
+@media screen and (max-width: 1600px) {
+	.policy-left ul li a{font-size: 18px;}
+    .policy-content .policy-content-list p{font-size:16px}
+    .policy-content .policy-content-list span{font-size: 14px;}
+    .policy-content .policy-content-time p{font-size: 16px;}
+}
+
+
+
+/*新闻内容*/
+.news-content{
+	width: 100%;
+	margin: 5% auto;
+}
+.content-left{
+	width: 55%;
+	float: left;
+}
+.content-left .content-left-title{
+	font-size: 24px;
+	text-align: center;
+	font-weight: 600;
+}
+.content-left .content-left-time{
+	width: 92%;
+	margin: 3% auto;
+}
+.content-left .content-left-time span:first-child{
+	display: block;
+	float: left;
+	font-size: 14px;
+	color: #666;
+}
+.content-left .content-left-time span:not(:first-child){
+	display: block;
+	float: right;
+	font-size: 14px;
+	color: #666;
+}
+.content-left .content-left-content{
+	width: 92%;
+	margin: 10% auto 0;
+}
+.content-left .content-left-content p{
+	line-height: 26px;
+}
+.content-left .content-left-page{
+	padding: 3% 0;
+	margin: 5% auto 0;
+	border-top: 1px dashed #ccc;
+}
+.content-left .content-left-page div{
+	margin-bottom: 20px;
+}
+.content-left .content-left-page div a{
+	font-size: 15px;
+	color: #888;
+}
+.content-left .content-left-page div a:hover{
+	color: #f26d00;
+}
+
+
+
+.content-right{
+	width: 40%;
+	float: right;
+}
+.content-right .content-right-type span{
+	font-size: 16px;
+	color: #fff;
+	padding: 1% 3%;
+	text-align: left;
+	background-color:#f26d00;
+}
+.content-right-content{
+	width: 100%;
+	padding: 5% 0;
+}
+.content-right-content ul li{
+	width: 100%;
+	margin-top: 3%;
+}
+.content-right-content ul li:hover .content-right-info .tit{
+	color: #333;
+}
+.content-right-content ul li:hover .content-right-info .time{
+	color: #333;
+}
+.content-right-content ul li:hover .content-right-info .more{
+	font-weight: 600;
+}
+.content-right-content ul li a{
+	display: inline-block;
+}
+.content-right-img{
+	width: 40%;
+	height: 136px;
+	float: left;
+}
+.content-right-img img{
+	width: 100%;
+	height: 100%;
+}
+.content-right-info{
+	width: 55%;
+	float: right;
+}
+.content-right-info .tit{
+	line-height: 32px;
+	color: #999;
+}
+.content-right-info .time{
+	font-size: 12px;
+	color: #999;
+	margin-top:5%;
+}
+.content-right-info .more{
+	display: inline-block;
+    color: #fff;
+    padding: 6% 5%;
+    background-color: #f26d00;
+    margin-top: 7%;
+    border-radius: 5px;
+}
+@media screen and (max-width: 1900px) {
+	.content-right-img{height: 116px;}
+}

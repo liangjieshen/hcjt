@@ -1,0 +1,250 @@
+.content-one{
+	width: 100%;
+	margin: 5% auto 0;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.content-one li{
+	width: 50%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.content-one li .one-box{
+	width: 86%;
+	margin: 0 auto;
+}
+.content-one li .one-box img{
+	width: 43%;
+}
+.content-one li .one-box .one-min{
+	margin-top: 10%;
+	width: 100%;
+	height: 38rem;
+	background-color: #fff;
+	position: relative;
+	box-shadow: 0 0 1rem #999;
+}
+.content-one li .one-box .one-min h3{
+	font-size: 3rem;
+	color: #fff;
+	text-align: center;
+	background-color: #f26d00;
+	padding: 5% 0;
+}
+.content-one li .one-box .one-min p{
+	font-size: 2.5rem;
+	color: #f26d00;
+	text-align: center;
+	margin: 5% auto 0;
+}
+.content-one li .one-box .one-min span{
+	width: 86%;
+	display: block;
+	font-size: 2rem;
+	color: #666666;
+	margin: 5% auto 0;
+	text-align: left;
+}
+.content-one li .one-box .one-min span em{
+	font-weight: bold;
+	color: #333;
+}
+.content-one li .one-box .one-min a{
+	border: 0.1rem solid #cccccc;
+	border-radius: 5rem;
+	padding: 7% 13%;
+	position: absolute;
+	bottom: 5%;
+	left: 28%;
+}
+.content-one li .one-box .one-min a:hover{
+	background-color: #f26d00;
+	color: #fff;
+	border: 0;
+}
+
+
+
+/* 欢创帮助企业找人才！抢人才！搞定人才-start */
+.search-rencai {
+	margin: 5% auto 0;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.search-rencai .search-rencai-box {
+	width: 20%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.search-rencai .search-rencai-box p {
+	font-size: 2.5rem;
+	color: #f26d00;
+	font-weight: 600;
+}
+.search-rencai .search-rencai-box span {
+	font-size: 2rem;
+	font-weight: 600;
+}
+/* 欢创帮助企业找人才！抢人才！搞定人才-end */
+
+
+
+/* 欢创专业服务的三懂四强--start */
+.sansi {
+	width: 100%;
+	margin-top: 5%;
+}
+/* 欢创专业服务的三懂四强--end */
+
+
+
+/* 欢创--start */
+.huanchuang-bg {
+	padding: 7% 0;
+	background-color: #fafafa;
+	margin:0 auto;
+}
+.huanchuang {
+	font-size: 3.5rem;
+	color: #f26d00;
+	font-weight: 600;
+	text-align: center;
+}
+.huanchuang-bg .huanchuang-con {
+	width: 80%;
+	margin: 0 auto;
+}
+.huanchuang-bg .huanchuang-con span {
+	display: block;
+	font-size: 2.5rem;
+	margin-top: 3%;
+	line-height: 4.5rem;
+	color: #f26d00;
+	text-align: center;
+}
+/* 欢创--end */
+
+
+
+/* 欢创的投入产出比--start */
+.jixuan {
+	width: 50%;
+	display: block;
+	margin:0% 0 0 25%;
+	text-align: center;
+	background-color: #f26d00;
+	border-radius: 5rem;
+	padding: 3% 5%;
+	font-size: 2rem;
+	color: #fff;
+}
+.touru-ul {
+	width: 100%;
+	margin: 5% auto 0;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.touru-ul li {
+	width: 14%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.touru-con {
+	width: 100%;
+	margin:0 auto;
+}
+.touru-con span {
+	display: block;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 5%;
+}
+.touru-con span em {
+	font-size: 1.2rem;
+}
+.touru-bottom {
+	margin-top: 5%;
+	font-size: 1.8rem;
+	text-align: center;
+	display: block;
+	line-height: 6rem;
+	margin-bottom: 1%;
+}
+.touru-bottom span {
+	color: #f26d00;
+	font-size: 2.3rem;
+	font-weight: 600;
+}
+/* 欢创的投入产出比--end */
+
+
+
+/* 找专业猎头欢创--start */
+.lietou {
+	padding: 6% 0;
+	background-color: #f3f3f3;
+}
+.lietou-ul {
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.lietou-ul li {
+	width: 33.33%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	margin-top: 5%;
+}
+.lietou-ul li .lietou-con {
+	width: 90%;
+	margin: 5% auto 0;
+}
+.lietou-ul li .lietou-con p {
+	text-align: center;
+	font-size: 3rem;
+	color: #f26d00;
+	font-weight: 600;
+}
+.lietou-ul li .lietou-con span {
+	display: block;
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 2%;
+}
+/* 找专业猎头欢创--end */

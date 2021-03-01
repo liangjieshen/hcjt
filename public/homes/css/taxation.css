@@ -1,0 +1,565 @@
+.content{
+	margin: 8% auto;
+}
+.tax-box{
+	width: 100%;
+	position: relative;
+}
+.tax-title{
+	font-size: 24px;
+	color: #333;
+	text-align: center;
+}
+.tax-title span{
+	font-weight: bold;
+	color: #ec3030;
+}
+.tax-small_title{
+	display: block;
+	font-size: 18px;
+	color: #666;
+	text-align: center;
+	line-height: 42px;
+}
+.tax-box-left{
+	width: 166px;
+	height: 4px;
+	display: block;
+	background-image: url('../image/shuiwu/left.png');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	display: inline-block;
+	position: absolute;
+	top:22%;left:22%;
+}
+.tax-box-right{
+	width: 166px;
+	height: 4px;
+	display: block;
+	background-image: url('../image/shuiwu/right.png');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	display: inline-block;
+	position: absolute;
+	top:22%;right:22%;
+}
+@media screen and (max-width: 1900px) {
+    .tax-title{font-size:20px}
+    .tax-small_title{font-size: 16px;}
+    .tax-box-left, .tax-box-right{width: 130px}
+}
+.problem-ul{
+	width: 100%;
+	margin:0 auto;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.problem-ul li{
+	width: 33.333%;
+	margin-top: 3%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	position: relative;
+}
+.problem-ul li div{
+	width: 90%;
+	max-height: 200px;
+	margin-left: 5%;
+	background-image: url('../image/shuiwu/img-01.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+}
+.problem-ul li div p{
+	font-size: 24px;
+	color: #333;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	margin-top: 5%;
+}
+.problem-ul li div span{
+	width: 88%;
+    display: block;
+    margin: 0 auto;
+	font-size: 16px;
+	color: #666;
+	display: block;
+	text-align: center;
+	line-height: 42px;
+	padding: 6% 0;
+}
+@media screen and (max-width: 1900px) {
+	.problem-ul li div p{font-size: 20px;}
+    .problem-ul li div span{font-size:14px;}
+}
+
+
+/*方案*/
+.plan{
+	width: 100%;
+	background-color: #f6f7fa;
+	display: inline-block;
+    padding: 6% 0 1% 0;
+}
+.type-box{
+	width: 1200px;
+	margin: 0% auto;
+}
+.type-box a{
+	font-size: 30px;
+	color: #333333;
+	background-color: #eeeeee;
+	padding: 2% 3%;
+	position: relative;
+	cursor: pointer;
+	margin-top: 3%;
+}
+#plan1{float: left;margin-left: 15%;}
+#plan2{float: right;margin-right: 15%;}
+.type-box a:hover{
+	color: #fff !important;
+	background-color: #f26d00 !important;
+}
+.type-box a:hover i{
+	width:0;
+	height:0;
+	border-right:17px solid transparent;
+	border-left:17px solid transparent;
+	border-top:23px solid #f26d00;
+	position: absolute;
+	bottom: -30%;
+	left: 26%;
+	display: block;
+}
+.type-box i{
+	width:0;
+	height:0;
+	border-right:17px solid transparent;
+	border-left:17px solid transparent;
+	border-top:23px solid #f26d00;
+	position: absolute;
+	bottom: -30%;
+	left: 26%;
+	display: none;
+}
+.type-active{
+	color: #fff !important;
+	background-color: #f26d00 !important;
+}
+.type-active i{
+	width:0;
+	height:0;
+	border-right:17px solid transparent;
+	border-left:17px solid transparent;
+	border-top:23px solid #f26d00;
+	position: absolute;
+	bottom: -30%;
+	display: block;
+}
+
+
+.type-ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	/*justify-content: space-between;*/
+}
+
+.type-ul li{
+	width: 25%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	position: relative;
+	border-left: 3px solid #f26d00;
+	padding: 2% 0;
+	cursor: pointer;
+}
+.type-ul li:nth-child(1){
+	border-bottom: 3px solid #f26d00;
+}
+.type-ul li:nth-child(2){
+	border-bottom: 3px solid #f26d00;
+}
+.type-ul li:nth-child(3){
+	border-bottom: 3px solid #f26d00;
+}
+.type-ul li:nth-child(4){
+	border-bottom: 3px solid #f26d00;
+	border-right: 3px solid #f26d00;
+}
+.type-ul li:nth-child(8){
+	border-right: 3px solid #f26d00;
+}
+.type-ul li:hover img {
+	transform: scale(1.1);
+	transition: all 1s ease 0s;
+}
+.type-ul li img{
+	max-width: 55px;
+	max-height: 68px;
+	margin: 10% auto;
+}
+.type-ul li p{
+	font-size: 24px;
+	color: #333;
+}
+@media screen and (max-width: 1900px) {
+    .type-box a{font-size:24px}
+}
+
+
+/*案例*/
+.case-ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+	margin-top: 3%;
+}
+.case-ul li{
+	width: 19.5%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	position: relative;
+	border: 1px solid #f26d00;
+	font-size: 24px;
+	color: #f26d00;
+	padding: 0.5% 0;
+	cursor: pointer;
+}
+.case-ul li:hover{
+	color: #fff !important;
+	background-color: #f26d00 !important;
+}
+.case-ul li:hover i{
+	border-right:11px solid transparent;
+	border-left:11px solid transparent;
+	border-top:16px solid #f26d00;
+	position: absolute;
+	bottom: -40%;
+	left: 26%;
+	display: block;
+}
+.case-ul i{
+	border-right:11px solid transparent;
+	border-left:11px solid transparent;
+	border-top:16px solid #f26d00;
+	position: absolute;
+	bottom: -40%;
+	left: 26%;
+	display: none;
+}
+.case-active{
+	color: #fff !important;
+	background-color: #f26d00 !important;
+}
+.case-active i{
+	border-right:11px solid transparent;
+	border-left:11px solid transparent;
+	border-top:16px solid #f26d00;
+	position: absolute;
+	bottom: -36%;
+	display: block;
+}
+.table-box{
+	width: 100%;
+	margin-top: 3%;
+}
+.tab{
+	width:100%;
+	border-collapse:collapse;
+}
+.tab:not(:first-child){
+	display: none;
+}
+.tab tr td{
+	width: 33.333%;
+	border:2px solid #f26d00;
+	padding: 2% 0;
+	text-align:center;
+	line-height:30px;
+	font-size: 24px;
+	color: #333;
+	position: relative;
+}
+.tab tr td h3{
+	width: 74%;
+	font-size: 24px;
+	margin: 0 auto;
+}
+.tab tr td em{
+	color: #ec3030;
+}
+.tab tr td .yun{
+	width: 15%;
+	height: 100%;
+	background-image: url('../image/shuiwu/yun.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	position: absolute;
+	bottom: 0%;
+	right: 42%;
+}
+.tab tr td .yun em{
+	font-size: 28px;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	margin-top: 17%;
+    margin-left: 5%;
+}
+@media screen and (max-width: 1900px) {
+    .case-ul li{font-size:16px}
+    .tab tr td h3{font-size: 18px;}
+    .tab tr td{font-size: 18px;}
+}
+
+
+/*地区*/
+.area-ul{
+	width: 70%;
+	margin: 5% auto;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.area-ul li{
+	width: 21%;
+	float: left;
+	padding: 2% 0;
+	background-color: #f26d00;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.area-ul li p{
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	letter-spacing:3px;
+}
+.area-ul li span{
+	font-size: 14px;
+	color: #333;
+	font-weight: bold;
+}
+.area-left{
+	width: 50%;
+	float: left;
+	border-right: 1px solid #f3f5f9;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.area-left img{
+	width: 86%;
+	height: 60%;
+	vertical-align:middle;
+	display:inline-block;
+}
+.area-right{
+	width: 49.6%;
+	float: right;
+	display: block;
+	position: relative;
+}
+.area-right .area-right-content{
+	width: 86%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.area-right .area-right-content p{
+	font-size: 24px;
+	color: #333;
+	line-height: 42px;
+	margin-top: 15%;
+}
+@media screen and (max-width: 1900px) {
+	.area-right .area-right-content p{font-size: 18px;}
+}
+
+
+/*个性化优势*/
+.good-ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.good-ul li{
+	width: 33.333%;
+	margin-top: 3%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	position: relative;
+}
+.good-ul li div{
+	width: 86%;
+	border: 1px solid #f26d00;
+	box-shadow: 2px 2px 8px 4px #f3f3f2;
+	margin: 0 auto;
+}
+.good-ul li div h3{
+	font-size: 24px;
+	color: #fff;
+	background-color: #f26d00;
+	padding:2% 0;
+	text-align: center;
+}
+.good-ul li div p{
+	width: 70%;
+	margin: 15% auto;
+	font-size: 20px;
+	color: #666;
+	line-height: 32px;
+}
+.good-ul li div p span{
+	color: #ec3030;
+	font-weight: 600;
+}
+@media screen and (max-width: 1900px) {
+	.good-ul li div p{font-size: 16px;}
+}
+@media screen and (max-width: 1600px) {
+	.good-ul li div p{font-size: 14px;}
+}
+
+
+
+
+/*服务流程*/
+.content-server{
+	width: 100%;
+	background-color: #f6f7fa;
+	padding: 6% 0;
+}
+.content-box{
+	width: 1200px;
+	margin: 5% auto 0;
+	position: relative;
+}
+.content-box .server-ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+	margin:0 auto;
+}
+.content-box .server-ul .server-li{
+	width:16.66%;
+	float:left;
+	position: relative;
+}
+
+.content-box .server-ul .server-li p{
+	font-size: 24px;
+	color:#333333;
+	text-align: center;
+}
+.content-box .server-ul .server-li p:after{
+	content: " ";
+	display: block;
+	margin: 5px 0 15px 33%;
+	width:41px;
+	height:4px;
+	background-color: #f26d00;
+}
+.content-box .server-ul .server-li span{
+	width: 100%;
+	display: inline-block;
+	font-size: 18px;
+	color:#333333;
+	text-align: center;
+}
+@media screen and (max-width: 1900px) {
+	.content-box .server-ul .server-li p{font-size: 18px;}
+	.content-box .server-ul .server-li span{font-size: 14px;}
+}
+
+
+/*合作伙伴*/
+.cooperation{
+	width: 100%;
+    display: inline-block;
+    padding: 6% 0;
+}
+.cooperation-box{
+    width: 1200px;
+    margin: 1% auto;
+}
+.cooperation-box ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+
+}
+.cooperation-box ul li{
+	width: 23.3%;
+	margin-top: 2%;
+	float: left;
+}
+.cooperation-box ul li img{
+	width: 100%;
+}
+.cooperation-box ul li img:hover {
+	transform: scale(1.1);
+	transition: all 1s ease 0s;
+}
+
+
+
+
+

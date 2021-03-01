@@ -1,0 +1,304 @@
+.banner .banner-box{
+	position: absolute;
+	top:30%;
+	left:18%;
+}
+.banner .banner-box p{
+	font-size: 72px;
+	display: block;
+	color: #fff;
+	text-align: left;
+}
+.banner .banner-box span{
+	font-size: 30px;
+	color: #fff;
+	display: block;
+	text-align: left;
+	margin: 2% 0;
+}
+.banner .banner-box a{
+	font-size: 30px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	padding: 2% 6%;
+	text-align: left;
+	line-height: 150px;
+}
+.banner .banner-box a:hover{
+	background-color: #f26d00;
+}
+
+
+
+/*服务场景*/
+.server-box{
+	width: 100%;
+	margin: 1% auto;
+}
+.server-box ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.server-box ul li{
+	width: 20%;
+	margin-top: 3%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+.server-box ul li .server-content{
+	width: 88%;
+	height: 265px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 8px 4px #f3f3f2
+}
+.server-box ul li .server-content:hover {
+	transform: scale(1.1);
+	transition: all 1s ease 0s;
+}
+.server-box ul li .server-content img{
+	width: 33%;
+	margin: 10% auto 0;
+}
+.server-box ul li .server-content p{
+	font-size: 18px;
+	color: #666666;
+	margin-top: 15%;
+	line-height: 32px;
+}
+@media screen and (min-width: 2200px) {
+    .server-box ul li .server-content{height:300px;}
+}
+@media screen and (max-width: 1600px) {
+    .server-box ul li .server-content{height:225px;}
+}
+
+
+/*提供服务*/
+.offer{
+	width: 100%;
+	display: inline-block;
+	background-color: #fff;
+	margin: 5% auto 0;
+	padding: 5% 0;
+}
+.offer-box{
+	width: 1200px;
+	margin: 1% auto;
+}
+.offer-box ul{
+	width: 100%;
+    /*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.offer-box ul li{
+	width: 31%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	margin-top: 5%;
+	padding: 3% 0;
+	box-shadow: 2px 2px 8px 4px #f3f3f2;
+}
+.offer-box ul li:hover {
+	transform: scale(1.1);
+	transition: all 1s ease 0s;
+}
+.offer-box ul li img{
+	width: 30%;
+	max-width: 108px;
+	max-height: 108px;
+	margin-left: 3%;
+	float:left;
+}
+.offer-box ul li .offer-content{
+	width: 56%;
+	float: left;
+	margin-top: -3%;
+    margin-left: 4%;
+}
+.offer-box ul li .offer-content p{
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	margin-left: 1%;
+	text-align: left;
+}
+.offer-box ul li .offer-content span{
+	font-size: 16px;
+	color: #666;
+	margin-left: 1%;
+	display: block;
+	margin-top: 5%;
+	text-align: left;
+}
+@media screen and (max-width: 1900px) {
+    .offer-box ul li .offer-content span{font-size: 14px;}
+}
+
+
+
+/* 欢创人力外包的优势-start */
+.youshi-img img:hover {
+	transform: scale(1.1);
+	transition: all 1s ease 0s;
+}
+/* 欢创人力外包的优势-end */
+
+
+
+
+/*服务保障*/
+.baozhang-bg{
+	background-image: url('../image/img-16.png');
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+.baozhang-bg .big-title{
+	display: block;
+	font-size: 36px;
+	font-family: "微软雅黑" !important;
+	color:#fff;
+	font-weight: bold;
+	text-align: center;
+	margin:6% 0 0 0;
+}
+.baozhang-bg .big-title:after{
+	content: " ";
+	display: block;
+	margin: 1% auto 0;
+	width:41px;
+	height:4px;
+	background-color: #fff;
+}
+.baozhang{
+    width: 100%;
+    display: inline-block;
+    background-color: #f9f8f8;
+    margin: 0% auto;
+    padding: 6% 0;
+}
+.baozhang-box{
+    width: 1200px;
+    margin: 1% auto;
+}
+.baozhang-box ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+}
+.baozhang-box ul li{
+	width: 25%;
+	margin-top: 3%;
+	float: left;
+	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	position: relative;
+}
+.baozhang-box ul li .baozhang-content{
+	width: 84%;
+	height: 335px;
+	margin-left: 8%;
+	border-radius: 10px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.baozhang-box ul li .baozhang-content:hover img {
+	transform: scale(1.1);
+	transition: all 1s ease 0s;
+}
+.baozhang-box ul li .baozhang-content img{
+	width: 30%;
+	margin: 10% auto;
+}
+.baozhang-box ul li .baozhang-content .baozang-font{
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+}
+.baozhang-box ul li .baozhang-content p{
+	font-size: 18px;
+	color: #333;
+	line-height: 26px;
+	font-weight: bold;
+}
+.baozhang-box ul li .baozhang-content span{
+	font-size: 15px;
+    color: #666666;
+    display: block;
+    line-height: 28px;
+    text-align: center;
+    width: 90%;
+    margin: 7% auto;
+}
+.baozhang-box ul li .baozhang-content em{
+	font-size: 14px;
+	color:#f03e3e;
+	font-weight: bold;
+}
+@media screen and (max-width: 1900px) {
+    .baozhang-box ul li .baozhang-content span{font-size:14px}
+}
+
+
+/*合作伙伴*/
+.cooperation{
+	width: 100%;
+    display: inline-block;
+    padding: 6% 0;
+}
+.cooperation-box{
+    width: 1200px;
+    margin: 1% auto;
+}
+.cooperation-box ul{
+	width: 100%;
+	/*声明flex布局*/
+	display: flex;
+	/*定义为横向布局，纵向布局使用column*/
+	flex-direction: row;
+	/*是否换行，nowrap为不换行*/
+	flex-wrap: wrap;
+	/*元素排列属性，从左往右：flex—start，从右往左：flex-end，从中间往两端：space-around，元素均匀分布：space-between*/
+	justify-content: space-between;
+
+}
+.cooperation-box ul li{
+	width: 23.3%;
+	margin-top: 2%;
+	float: left;
+}
+.cooperation-box ul li img{
+	width: 100%;
+}
+.cooperation-box ul li img:hover {
+	transform: scale(1.1);
+	transition: all 1s ease 0s;
+}
