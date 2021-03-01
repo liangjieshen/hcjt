@@ -1,0 +1,420 @@
+[33mcommit f949b5f3a2d8b36d890b0e4d6efdff310138df0b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: jaysonLeung <962573315@qq.com>
+Date:   Tue Mar 2 01:53:09 2021 +0800
+
+    第一次提交
+
+[1mdiff --git a/.editorconfig b/.editorconfig[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6f313c6[m
+[1m--- /dev/null[m
+[1m+++ b/.editorconfig[m
+[36m@@ -0,0 +1,15 @@[m
+[32m+[m[32mroot = true[m
+[32m+[m
+[32m+[m[32m[*][m
+[32m+[m[32mcharset = utf-8[m
+[32m+[m[32mend_of_line = lf[m
+[32m+[m[32minsert_final_newline = true[m
+[32m+[m[32mindent_style = space[m
+[32m+[m[32mindent_size = 4[m
+[32m+[m[32mtrim_trailing_whitespace = true[m
+[32m+[m
+[32m+[m[32m[*.md][m
+[32m+[m[32mtrim_trailing_whitespace = false[m
+[32m+[m
+[32m+[m[32m[*.yml][m
+[32m+[m[32mindent_size = 2[m
+[1mdiff --git a/.env.example b/.env.example[m
+[1mnew file mode 100644[m
+[1mindex 0000000..27f6db4[m
+[1m--- /dev/null[m
+[1m+++ b/.env.example[m
+[36m@@ -0,0 +1,39 @@[m
+[32m+[m[32mAPP_NAME=Laravel[m
+[32m+[m[32mAPP_ENV=local[m
+[32m+[m[32mAPP_KEY=[m
+[32m+[m[32mAPP_DEBUG=true[m
+[32m+[m[32mAPP_URL=http://localhost[m
+[32m+[m
+[32m+[m[32mLOG_CHANNEL=stack[m
+[32m+[m
+[32m+[m[32mDB_CONNECTION=mysql[m
+[32m+[m[32mDB_HOST=127.0.0.1[m
+[32m+[m[32mDB_PORT=3306[m
+[32m+[m[32mDB_DATABASE=homestead[m
+[32m+[m[32mDB_USERNAME=homestead[m
+[32m+[m[32mDB_PASSWORD=secret[m
+[32m+[m
+[32m+[m[32mBROADCAST_DRIVER=log[m
+[32m+[m[32mCACHE_DRIVER=file[m
+[32m+[m[32mQUEUE_CONNECTION=sync[m
+[32m+[m[32mSESSION_DRIVER=file[m
+[32m+[m[32mSESSION_LIFETIME=120[m
+[32m+[m
+[32m+[m[32mREDIS_HOST=127.0.0.1[m
+[32m+[m[32mREDIS_PASSWORD=null[m
+[32m+[m[32mREDIS_PORT=6379[m
+[32m+[m
+[32m+[m[32mMAIL_DRIVER=smtp[m
+[32m+[m[32mMAIL_HOST=smtp.mailtrap.io[m
+[32m+[m[32mMAIL_PORT=2525[m
+[32m+[m[32mMAIL_USERNAME=null[m
+[32m+[m[32mMAIL_PASSWORD=null[m
+[32m+[m[32mMAIL_ENCRYPTION=null[m
+[32m+[m
+[32m+[m[32mPUSHER_APP_ID=[m
+[32m+[m[32mPUSHER_APP_KEY=[m
+[32m+[m[32mPUSHER_APP_SECRET=[m
+[32m+[m[32mPUSHER_APP_CLUSTER=mt1[m
+[32m+[m
+[32m+[m[32mMIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"[m
+[32m+[m[32mMIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"[m
+[1mdiff --git a/.gitattributes b/.gitattributes[m
+[1mnew file mode 100644[m
+[1mindex 0000000..967315d[m
+[1m--- /dev/null[m
+[1m+++ b/.gitattributes[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m* text=auto[m
+[32m+[m[32m*.css linguist-vendored[m
+[32m+[m[32m*.scss linguist-vendored[m
+[32m+[m[32m*.js linguist-vendored[m
+[32m+[m[32mCHANGELOG.md export-ignore[m
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..59e8f45[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1,11 @@[m
+[32m+[m[32m/node_modules[m
+[32m+[m[32m/public/hot[m
+[32m+[m[32m/public/storage[m
+[32m+[m[32m/storage/*.key[m
+[32m+[m[32m/vendor[m
+[32m+[m[32m.env[m
+[32m+[m[32m.phpunit.result.cache[m
+[32m+[m[32mHomestead.json[m
+[32m+[m[32mHomestead.yaml[m
+[32m+[m[32mnpm-debug.log[m
+[32m+[m[32myarn-error.log[m
+[1mdiff --git a/app/Console/Kernel.php b/app/Console/Kernel.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a8c5158[m
+[1m--- /dev/null[m
+[1m+++ b/app/Console/Kernel.php[m
+[36m@@ -0,0 +1,42 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mnamespace App\Console;[m
+[32m+[m
+[32m+[m[32muse Illuminate\Console\Scheduling\Schedule;[m
+[32m+[m[32muse Illuminate\Foundation\Console\Kernel as ConsoleKernel;[m
+[32m+[m
+[32m+[m[32mclass Kernel extends ConsoleKernel[m
+[32m+[m[32m{[m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * The Artisan commands provided by your application.[m
+[32m+[m[32m     *[m
+[32m+[m[32m     * @var array[m
+[32m+[m[32m     */[m
+[32m+[m[32m    protected $commands = [[m
+[32m+[m[32m        //[m
+[32m+[m[32m    ];[m
+[32m+[m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Define the application's command schedule.[m
+[32m+[m[32m     *[m
+[32m+[m[32m     * @param  \Illuminate\Console\Scheduling\Schedule  $schedule[m
+[32m+[m[32m     * @return void[m
+[32m+[m[32m     */[m
+[32m+[m[32m    protected function schedule(Schedule $schedule)[m
+[32m+[m[32m    {[m
+[32m+[m[32m        // $schedule->command('inspire')[m
+[32m+[m[32m        //          ->hourly();[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Register the commands for the application.[m
+[32m+[m[32m     *[m
+[32m+[m[32m     * @return void[m
+[32m+[m[32m     */[m
+[32m+[m[32m    protected function commands()[m
+[32m+[m[32m    {[m
+[32m+[m[32m        $this->load(__DIR__.'/Commands');[m
+[32m+[m
+[32m+[m[32m        require base_path('routes/console.php');[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/app/Exceptions/Handler.php b/app/Exceptions/Handler.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..043cad6[m
+[1m--- /dev/null[m
+[1m+++ b/app/Exceptions/Handler.php[m
+[36m@@ -0,0 +1,51 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mnamespace App\Exceptions;[m
+[32m+[m
+[32m+[m[32muse Exception;[m
+[32m+[m[32muse Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;[m
+[32m+[m
+[32m+[m[32mclass Handler extends ExceptionHandler[m
+[32m+[m[32m{[m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * A list of the exception types that are not reported.[m
+[32m+[m[32m     *[m
+[32m+[m[32m     * @var array[m
+[32m+[m[32m     */[m
+[32m+[m[32m    protected $dontReport = [[m
+[32m+[m[32m        //[m
+[32m+[m[32m    ];[m
+[32m+[m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * A list of the inputs that are never flashed for validation exceptions.[m
+[32m+[m[32m     *[m
+[32m+[m[32m     * @var array[m
+[32m+[m[32m     */[m
+[32m+[m[32m    protected $dontFlash = [[m
+[32m+[m[32m        'password',[m
+[32m+[m[32m        'password_confirmation',[m
+[32m+[m[32m    ];[m
+[32m+[m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Report or log an exception.[m
+[32m+[m[32m     *[m
+[32m+[m[32m     * @param  \Exception  $exception[m
+[32m+[m[32m     * @return void[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public function report(Exception $exception)[m
+[32m+[m[32m    {[m
+[32m+[m[32m        parent::report($exception);[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Render an exception into an HTTP response.[m
+[32m+[m[32m     *[m
+[32m+[m[32m     * @param  \Illuminate\Http\Request  $request[m
+[32m+[m[32m     * @param  \Exception  $exception[m
+[32m+[m[32m     * @return \Illuminate\Http\Response[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public function render($request, Exception $exception)[m
+[32m+[m[32m    {[m
+[32m+[m[32m        return parent::render($request, $exception);[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/app/Helper/functions.php b/app/Helper/functions.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fde3b31[m
+[1m--- /dev/null[m
+[1m+++ b/app/Helper/functions.php[m
+[36m@@ -0,0 +1,368 @@[m
+[32m+[m[32m<?php[m
+[32m+[m[32mfunction can()[m
+[32m+[m[32m{[m
+[32m+[m[32m    $currRouteName = \Illuminate\Support\Facades\Route::currentRouteName();[m
+[32m+[m
+[32m+[m[32m    if (ends_with($currRouteName, 'white')) {[m
+[32m+[m[32m        return true;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    $user = session()->get('user');[m
+[32m+[m[32m    if ($user['administrator'] == \App\Http\Models\Users::ADMIN_YES) {[m
+[32m+[m[32m        return true;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    $role_ids = \App\Http\Models\UsersRoles::where('users_id', $user['id'])->pluck('roles_id')->toArray();[m
+[32m+[m
+[32m+[m[32m    $permission_ids = \App\Http\Models\RolePermission::whereIn('roles_id', $role_ids)->pluck('permission_id')->toArray();[m
+[32m+[m
+[32m+[m[32m    $check = \App\Http\Models\Permission::whereIn('id', $permission_ids)->where('routes', 'like', "%{$currRouteName}%")->count();[m
+[32m+[m[32m    if ($check > 0) {[m
+[32m+[m[32m        return true;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    return false;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * 发送HTTP请求方法[m
+[32m+[m[32m * @param  string $url    请求URL[m
+[32m+[m[32m * @param  array  $params 请求参数[m
+[32m+[m[32m * @param  string $method 请求方法GET/POST[m
+[32m+[m[32m * @return array  $data   响应数据[m
+[32m+[m[32m */[m
+[32m+[m[32mfunction httpCurl($url, $params, $method = 'POST', $header = array(), $multi = false){[m
+[32m+[m[32m    date_default_timezone_set('PRC');[m
+[32m+[m[32m    $opts = array([m
+[32m+[m[32m        CURLOPT_TIMEOUT        => 30,[m
+[32m+[m[32m        CURLOPT_RETURNTRANSFER => 1,[m
+[32m+[m[32m        CURLOPT_SSL_VERIFYPEER => false,[m
+[32m+[m[32m        CURLOPT_SSL_VERIFYHOST => false,[m
+[32m+[m[32m        CURLOPT_HTTPHEADER     => $header,[m
+[32m+[m[32m        CURLOPT_COOKIESESSION  => true,[m
+[32m+[m[32m        CURLOPT_FOLLOWLOCATION => 1,[m
+[32m+[m[32m        CURLOPT_COOKIE         =>session_name().'='.session_id(),[m
+[32m+[m[32m    );[m
+[32m+[m[32m    /* 根据请求类型设置特定参数 */[m
+[32m+[m[32m    switch(strtoupper($method)){[m
+[32m+[m[32m        case 'GET':[m
+[32m+[m[32m            // $opts[CURLOPT_URL] = $url . '?' . http_build_query($params);[m
+[32m+[m[32m            // 链接后拼接参数  &  非？[m
+[32m+[m[32m            $opts[CURLOPT_URL] = $url . '?' . http_build_query($params);[m
+[32m+[m[32m            break;[m
+[32m+[m[32m        case 'POST':[m
+[32m+[m[32m            //判断是否传输文件[m
+[32m+[m[32m            $params = $multi ? $params : http_build_query($params);[m
+[32m+[m[32m            $opts[CURLOPT_URL] = $url;[m
+[32m+[m[32m            $opts[CURLOPT_POST] = 1;[m
+[32m+[m[32m            $opts[CURLOPT_POSTFIELDS] = $params;[m
+[32m+[m[32m            break;[m
+[32m+[m[32m        default:[m
+[32m+[m[32m            throw new Exception('不支持的请求方式！');[m
+[32m+[m[32m    }[m
+[32m+[m[32m    /* 初始化并执行curl请求 */[m
+[32m+[m[32m    $ch = curl_init();[m
+[32m+[m[32m    curl_setopt_array($ch, $opts);[m
+[32m+[m[32m    $data  = curl_exec($ch);[m
+[32m+[m[32m    $error = curl_error($ch);[m
+[32m+[m[32m    curl_close($ch);[m
+[32m+[m[32m    if($error) throw new Exception('请求发生错误：' . $error);[m
+[32m+[m[32m    return  $data;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * 请求过程中因为编码原因+号变成了空格[m
+[32m+[m[32m * 需要用下面的方法转换回来[m
+[32m+[m[32m */[m
+[32m+[m[32mfunction define_str_replace($data)[m
+[32m+[m[32m{[m
+[32m+[m[32m    return str_replace(' ', '+', $data);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * 微信信息解密[m
+[32m+[m[32m * @param string $appid 小程序id[m
+[32m+[m[32m * @param string $sessionKey 小程序密钥[m
+[32m+[m[32m * @param string $encryptedData 在小程序中获取的encryptedData[m
+[32m+[m[32m * @param string $iv 在小程序中获取的iv[m
+[32m+[m[32m * @return array 解密后的数组[m
+[32m+[m[32m */[m
+[32m+[m[32mfunction decryptData($appid, $sessionKey, $encryptedData, $iv)[m
+[32m+[m[32m{[m
+[32m+[m[32m    $OK = 0;[m
+[32m+[m[32m    $IllegalAesKey = -41001;[m
+[32m+[m[32m    $IllegalIv = -41002;[m
+[32m+[m[32m    $IllegalBuffer = -41003;[m
+[32m+[m[32m    $DecodeBase64Error = -41004;[m
+[32m+[m
+[32m+[m[32m    if (strlen($sessionKey) != 24) {[m
+[32m+[m[32m        return $IllegalAesKey;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    $aesKey = base64_decode($sessionKey);[m
+[32m+[m
+[32m+[m[32m    if (strlen($iv) != 24) {[m
+[32m+[m[32m        return $IllegalIv;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    $aesIV = base64_decode($iv);[m
+[32m+[m
+[32m+[m[32m    $aesCipher = base64_decode($encryptedData);[m
+[32m+[m
+[32m+[m[32m    $result = openssl_decrypt($aesCipher, "AES-128-CBC", $aesKey, 1, $aesIV);[m
+[32m+[m[32m    $dataObj = json_decode($result);[m
+[32m+[m[32m    if ($dataObj == NULL) {[m
+[32m+[m[32m        return $IllegalBuffer;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    if ($dataObj->watermark->appid != $appid) {[m
+[32m+[m[32m        return $DecodeBase64Error;[m
+[32m+[m[32m    }[m
+[32m+[m[32m    $data = json_decode($result, true);[m
+[32m+[m
+[32m+[m[32m    return $data;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * 将xml格式转换成数组[m
+[32m+[m[32m *[m
+[32m+[m[32m * return array[m
+[32m+[m[32m */[m
+[32m+[m[32mfunction xmlToArray($xml)[m
+[32m+[m[32m{[m
+[32m+[m[32m    //禁止引用外部xml实体[m
+[32m+[m[32m    libxml_disable_entity_loader(true);[m
+[32m+[m[32m    $xmlstring = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);[m
+[32m+[m[32m    $val = json_decode(json_encode($xmlstring), true);[m
+[32m+[m[32m    return $val;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/**对emoji表情转义[m
+[32m+[m[32m * @param $nickname[m
+[32m+[m[32m * @return string[m
+[32m+[m[32m */[m
+[32m+[m[32mfunction emoji_encode($nickname)[m
+[32m+[m[32m{[m
+[32m+[m[32m    $strEncode = '';[m
+[32m+[m[32m    $length = mb_strlen($nickname, 'utf-8');[m
+[32m+[m[32m    for ($i = 0; $i < $length; $i++) {[m
+[32m+[m[32m        $_tmpStr = mb_substr($nickname, $i, 1, 'utf-8');[m
+[32m+[m[32m        if (strlen($_tmpStr) >= 4) {[m
+[32m+[m[32m            $strEncode .= '[[EMOJI:' . rawurlencode($_tmpStr) . ']]';[m
+[32m+[m[32m        } else {[m
+[32m+[m[32m            $strEncode .= $_tmpStr;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m    return $strEncode;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m// 对emoji表情转反义[m
+[32m+[m[32mfunction emoji_decode($str)[m
+[32m+[m[32m{[m
+[32m+[m[32m    $strDecode = preg_replace_callback('|\[EMOJI:(.∗?)\]|', function ($matches) {[m
+[32m+[m[32m        return rawurldecode($matches[1]);[m
+[32m+[m[32m    }, $str);[m
+[32m+[m
+[32m+[m[32m    return $strDecode;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m// 短信CURL提交[m
+[32m+[m[32mfunction Post($curlPost,$url){[m
+[32m+[m[32m    $curl = curl_init();[m
+[32m+[m[32m    curl_setopt($curl, CURLOPT_URL, $url);[m
+[32m+[m[32m    curl_setopt($curl, CURLOPT_HEADER, false);[m
+[32m+[m[32m    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);[m
+[32m+[m[32m    curl_setopt($curl, CURLOPT_NOBODY, true);[m
+[32m+[m[32m    curl_setopt($curl, CURLOPT_POST, true);[m
+[32m+[m[32m    curl_setopt($curl, CURLOPT_POSTFIELDS, $curlPost);[m
+[32m+[m[32m    $return_str = curl_exec($curl);[m
+[32m+[m[32m    curl_close($curl);[m
+[32m+[m[32m    return $return_str;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * 获取客户端浏览器信息[m
+[32m+[m[32m * @param   null[m
+[32m+[m[32m * @author  https://blog.jjonline.cn/phptech/168.html[m
+[32m+[m[32m * @return  string[m
+[32m+[m[32m */[m
+[32m+[m[32mfunction get_broswer()[m
+[32m+[m[32m{[m
+[32m+[m[32m    $sys = $_SERVER['HTTP_USER_AGENT'];  //获取用户代理字符串[m
+[32m+[m[32m    if (stripos($sys, "Firefox/") > 0) {[m
+[32m+[m[32m        preg_match("/Firefox\/([^;)]+)+/i", $sys, $b);[m
+[32m+[m[32m        $exp[0] = "Firefox";[m
+[32m+[m[32m        $exp[1] = $b[1];  	//获取火狐浏览器的版本号[m
+[32m+[m[32m    } elseif (stripos($sys, "Maxthon") > 0) {[m
+[32m+[m[32m        preg_match("/Maxthon\/([\d\.]+)/", $sys, $aoyou);[m
+[32m+[m[32m        $exp[0] = "傲游";[m
+[32m+[m[32m        $exp[1] = $aoyou[1];[m
+[32m+[m[32m    } elseif (stripos($sys, "MSIE") > 0) {[m
+[32m+[m[32m        preg_match("/MSIE\s+([^;)]+)+/i", $sys, $ie);[m
+[32m+[m[32m        $exp[0] = "IE";[m
+[32m+[m[32m        $exp[1] = $ie[1];  //获取IE的版本号[m
+[32m+[m[32m    
